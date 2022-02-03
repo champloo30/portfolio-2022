@@ -1,0 +1,53 @@
+.home {
+  height: 100vh;
+  background-color: #F9F6EE;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home .text-box {
+  height: 60vh;
+  color: #585481;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+.home .text-box h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.home .text-box h1 {
+  font-size: 7rem;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  color: #F38375;
+  margin-top: -1rem;
+}
+.home .text-box .bottom-text-home {
+  display: flex;
+}
+.home .text-box .bottom-text-home h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: freight-display-pro, serif;
+}
+.home .text-box .bottom-text-home h3 span {
+  font-weight: 300;
+  font-family: source-code-pro, monospace;
+  color: #107E7D;
+}
+.home .text-box .bottom-text-home .ityped-cursor {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

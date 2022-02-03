@@ -1,0 +1,61 @@
+@import "../../global.scss";
+
+.home{
+    height: 100vh;
+    background-color: $bone;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .text-box{
+        height: 60vh;
+        color: $purpleNavy;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 2rem;
+
+        h2{
+            font-size: 4rem;
+            font-weight: 300;
+        }
+    
+        h1{
+            font-size: 7rem;
+            font-family: $display;
+            font-weight: 400;
+            color: $salmon;
+            margin-top: -1rem;
+        }
+    
+        .bottom-text-home{
+            display: flex;
+    
+            h3{
+                font-size: 3rem;
+                font-weight: 300;
+                font-family: $display;
+
+                span{
+                    font-weight: 300;
+                    font-family: $source;
+                    color: $teal;
+                }
+            }
+
+            .ityped-cursor{
+                animation: blink 1s infinite;
+            }
+    
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
