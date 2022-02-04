@@ -1,6 +1,103 @@
 .contact {
-  height: 90vh;
   background-color: #585481;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  font-size: 4rem;
+  color: #F9F6EE;
+  font-weight: 300;
+  margin-top: -3rem;
+}
+.contact h3 {
+  color: #F38375;
+  font-weight: 300;
+  font-size: 1.75rem;
+  font-family: freight-display-pro, serif;
+  margin-top: -1rem;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1rem;
+}
+.contact .form .input-form {
+  width: 70%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact .form .input-form input {
+  width: 31.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: #585481;
+  color: #F9F6EE;
+  border: 1px solid #107E7D;
+  border-radius: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-family: freight-display-pro, serif;
+  font-size: 1.25rem;
+}
+.contact .form .input-form input::placeholder {
+  color: #F9F6EE;
+}
+.contact .form .input-form input:focus {
+  outline: none;
+}
+.contact .form .input-form textarea {
+  width: 31.5rem;
+  height: 12.5rem;
+  font-size: 1.5rem;
+  background-color: #585481;
+  color: #F9F6EE;
+  border: 1px solid #107E7D;
+  border-radius: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: freight-display-pro, serif;
+  font-size: 1.25rem;
+}
+.contact .form .input-form textarea::placeholder {
+  color: #F9F6EE;
+}
+.contact .form .input-form textarea:focus {
+  outline: none;
+}
+.contact .form .input-form button {
+  width: 7rem;
+  height: 3rem;
+  color: #F38375;
+  background-color: #585481;
+  border: 1px solid #F38375;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  cursor: pointer;
+  margin: auto;
+}
+.contact .form .input-form button:hover {
+  background-color: #F38375;
+  color: #585481;
+}
+.contact .form .input-form button:focus {
+  outline: none;
+}
+.contact .form .input-form span {
+  color: #107E7D;
+  text-align: center;
 }
 
 /*# sourceMappingURL=contact.css.map */

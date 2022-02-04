@@ -9,10 +9,15 @@
     align-items: center;
     justify-content: center;
 
-    h3{
-        font-size: 2rem;
-        font-weight: 300;
-        font-family: $display;
-        color: $bone;
+    a {
+        text-decoration: none;
+        margin-left: 70rem;
+        
+        h3{
+            font-size: 2rem;
+            font-weight: 300;
+            font-family: $display;
+            color: $bone;
+        }
     }
 }

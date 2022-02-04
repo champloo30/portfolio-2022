@@ -17,7 +17,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
     <div className={"navbar " + (menuOpen && "active")} onScroll={changeNavbarColor} >
       <div className="container">
         <div className="left">
-          <a href="/" className="logo">DJLD</a>
+          <a href="/" className="logo" onClick={()=>setMenuOpen(false)}>DJLD</a>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

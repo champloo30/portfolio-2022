@@ -7,7 +7,11 @@
   align-items: center;
   justify-content: center;
 }
-.footer h3 {
+.footer a {
+  text-decoration: none;
+  margin-left: 70rem;
+}
+.footer a h3 {
   font-size: 2rem;
   font-weight: 300;
   font-family: freight-display-pro, serif;

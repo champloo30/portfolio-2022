@@ -16,13 +16,14 @@
     transition: all 1.5s ease;
 
     .about {
+        width: 80%;
+        height: 10rem;
         background-color: $salmon;
-        text-decoration: none;
 
-        #about {
-            width: 80%;
+        .about-container {
             display: flex;
             align-items: center;
+            text-decoration: none;
     
             .icon {
                 cursor: pointer;
@@ -40,38 +41,51 @@
     
     .portfolio {
         width: 80%;
-        display: flex;
-        align-items: center;
+        height: 10rem;
+        background-color: $salmon;
+        
+        .portfolio-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
 
-        .icon {
-            cursor: pointer;
-        }
+            .icon {
+                cursor: pointer;
+            }
 
-        h2 {
-            color: $bone;
-            font-size: 2rem;
-            font-weight: 300;
-            margin-left: 1rem;
-            cursor: pointer;
+            h2 {
+                color: $bone;
+                font-size: 2rem;
+                font-weight: 300;
+                margin-left: 1rem;
+                cursor: pointer;
+            }
         }
     }
 
     .contact {
         width: 80%;
-        display: flex;
-        align-items: center;
+        height: 10rem;
         background-color: $salmon;
+        
+        .contact-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            margin-left: -2.25rem;
 
-        .icon {
-            cursor: pointer;
-        }
+            .icon {
+                cursor: pointer;
+            }
 
-        h2 {
-            color: $bone;
-            font-size: 2rem;
-            font-weight: 300;
-            margin-left: 1rem;
-            cursor: pointer;
+            h2 {
+                color: $bone;
+                font-size: 2rem;
+                font-weight: 300;
+                margin-left: 1rem;
+                cursor: pointer;
+            }
         }
     }
 

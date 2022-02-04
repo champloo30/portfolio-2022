@@ -1,6 +1,117 @@
 @import "../../global.scss";
 
-.contact {
-    height: 90vh;
+.contact{
     background-color: $purpleNavy;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-size: 4rem;
+        color: $bone;
+        font-weight: 300;
+        margin-top: -3rem;
+    }
+
+    h3{
+        color: $salmon;
+        font-weight: 300;
+        font-size: 1.75rem;
+        font-family: $display;
+        margin-top: -1rem;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -1rem;
+
+        .input-form{
+            width: 70%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            input{
+                width: 31.5rem;
+                height: 2.5rem;
+                font-size: 1.5rem;
+                background-color: $purpleNavy;
+                color: $bone;
+                border: 1px solid $teal;
+                border-radius: 10px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                font-family: $display;
+                font-size: 1.25rem;
+
+                &::placeholder{
+                    color: $bone;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            
+            textarea{
+                width: 31.5rem;
+                height: 12.5rem;
+                font-size: 1.5rem;
+                background-color: $purpleNavy;
+                color: $bone;
+                border: 1px solid $teal;
+                border-radius: 10px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                font-family: $display;
+                font-size: 1.25rem;
+
+                &::placeholder{
+                    color: $bone;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            button{
+                width: 7rem;
+                height: 3rem;
+                color: $salmon;
+                background-color: $purpleNavy;
+                border: 1px solid $salmon;
+                border-radius: 10px;
+                font-size: 1.5rem;
+                transition: all 0.5s ease;
+                font-weight: 600;
+                cursor: pointer;
+                margin: auto;
+
+                &:hover{
+                    background-color: $salmon;
+                    color: $purpleNavy;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                color: $teal;
+                text-align: center;
+            }
+        }
+    }
 }

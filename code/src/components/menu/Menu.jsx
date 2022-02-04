@@ -7,18 +7,22 @@ export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <div className="about">
-        <a href="#about">
+        <a href="#about" className="about-container" onClick={()=>setMenuOpen(false)}>
           <img src={person} alt="Person Icon" className="icon" />
           <h2>About Me</h2>
         </a>
       </div>
       <div className="portfolio">
-        <img src={briefcase} alt="Briefcase Icon" className="icon" />
-        <h2>Portfolio</h2>
+        <a href="#portfolio" className="portfolio-container" onClick={()=>setMenuOpen(false)}>
+          <img src={briefcase} alt="Briefcase Icon" className="icon" />
+          <h2>Portfolio</h2>
+        </a>
       </div>
       <div className="contact">
-        <img src={iphone} alt="iPhone X Icon" className="icon" />
-        <h2>Contact</h2>
+        <a href="#contact" className="contact-container" onClick={()=>setMenuOpen(false)}>
+          <img src={iphone} alt="iPhone X Icon" className="icon" />
+          <h2>Contact</h2>
+        </a>
       </div>
     </div>
   );

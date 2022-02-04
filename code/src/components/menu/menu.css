@@ -14,18 +14,19 @@
   transition: all 1.5s ease;
 }
 .menu .about {
-  background-color: #F38375;
-  text-decoration: none;
-}
-.menu .about #about {
   width: 80%;
+  height: 10rem;
+  background-color: #F38375;
+}
+.menu .about .about-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
-.menu .about #about .icon {
+.menu .about .about-container .icon {
   cursor: pointer;
 }
-.menu .about #about h2 {
+.menu .about .about-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
@@ -34,13 +35,18 @@
 }
 .menu .portfolio {
   width: 80%;
+  height: 10rem;
+  background-color: #F38375;
+}
+.menu .portfolio .portfolio-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
-.menu .portfolio .icon {
+.menu .portfolio .portfolio-container .icon {
   cursor: pointer;
 }
-.menu .portfolio h2 {
+.menu .portfolio .portfolio-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
@@ -49,14 +55,20 @@
 }
 .menu .contact {
   width: 80%;
-  display: flex;
-  align-items: center;
+  height: 10rem;
   background-color: #F38375;
 }
-.menu .contact .icon {
+.menu .contact .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin-left: -2.25rem;
+}
+.menu .contact .contact-container .icon {
   cursor: pointer;
 }
-.menu .contact h2 {
+.menu .contact .contact-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
