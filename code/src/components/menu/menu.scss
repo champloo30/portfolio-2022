@@ -1,12 +1,12 @@
 @import "../../global.scss";
 
 .menu {
-    width: 300px;
+    width: 20rem;
     height: calc(100vh - 70px);
     background-color: $salmon;
     position: fixed;
     margin-top: 70px;
-    right: -300px;
+    right: -20rem;
     opacity: 0;
     z-index: 0;
     display: flex;
@@ -14,6 +14,66 @@
     align-items: center;
     justify-content: center;
     transition: all 1.5s ease;
+
+    .about {
+        background-color: $salmon;
+        text-decoration: none;
+
+        #about {
+            width: 80%;
+            display: flex;
+            align-items: center;
+    
+            .icon {
+                cursor: pointer;
+            }
+    
+            h2 {
+                color: $bone;
+                font-size: 2rem;
+                font-weight: 300;
+                margin-left: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .portfolio {
+        width: 80%;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            cursor: pointer;
+        }
+
+        h2 {
+            color: $bone;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .contact {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        background-color: $salmon;
+
+        .icon {
+            cursor: pointer;
+        }
+
+        h2 {
+            color: $bone;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+    }
 
     &.active {
         opacity: 1;

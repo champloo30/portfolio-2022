@@ -1,10 +1,10 @@
 .menu {
-  width: 300px;
+  width: 20rem;
   height: calc(100vh - 70px);
   background-color: #F38375;
   position: fixed;
   margin-top: 70px;
-  right: -300px;
+  right: -20rem;
   opacity: 0;
   z-index: 0;
   display: flex;
@@ -12,6 +12,56 @@
   align-items: center;
   justify-content: center;
   transition: all 1.5s ease;
+}
+.menu .about {
+  background-color: #F38375;
+  text-decoration: none;
+}
+.menu .about #about {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.menu .about #about .icon {
+  cursor: pointer;
+}
+.menu .about #about h2 {
+  color: #F9F6EE;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.menu .portfolio {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.menu .portfolio .icon {
+  cursor: pointer;
+}
+.menu .portfolio h2 {
+  color: #F9F6EE;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.menu .contact {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #F38375;
+}
+.menu .contact .icon {
+  cursor: pointer;
+}
+.menu .contact h2 {
+  color: #F9F6EE;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 .menu.active {
   opacity: 1;

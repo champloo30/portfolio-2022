@@ -13,7 +13,7 @@ import pdf from "../../assets/Dalyn_J.L._Dunn_Resume.pdf";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="part-one">
         <img src={avatar} alt="Avatar of Me" className="avatar" />
         <h2>Dalyn J. L. Dunn</h2>
