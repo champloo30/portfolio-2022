@@ -95,7 +95,7 @@
 .contact .form .input-form button:focus {
   outline: none;
 }
-.contact .form .input-form span {
+.contact .form .input-form #afterSubmitText {
   color: #107E7D;
   text-align: center;
 }

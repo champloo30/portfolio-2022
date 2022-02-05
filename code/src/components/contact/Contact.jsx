@@ -3,42 +3,50 @@ import { useState } from "react";
 
 export default function Contact() {
 
-    const [formData, setFormData] = useState({});
-    const [message, setMessage] = useState(false)
+    const [data, setData] = useState({
+        name: "",
+        company: "",
+        email: "",
+        message: "",
+    });
 
-    const handleInput = e => {
-        const copyFormData = { ...formData };
-        copyFormData[e.target.name] = e.target.value;
-        setFormData(copyFormData);
+    const { name, company, email, message } = data;
+
+    const handleChange = e => {
+        setData({ ...data, [e.target.name]: e.target.value });
     };
 
-    const sendData = async e => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const {name, company, email, message} = formData
+
         try {
             const response = await fetch(
-                "https://v1.nocodeapi.com/champloo30/google_sheets/LlqXPzXghTQcNjur?tabId=Portfolio",
-                {
-                    method: "post",
-                    body: JSON.stringify([[name, company, email, message]]),
+                'https://v1.nocodeapi.com/champloo30/google_sheets/LlqXPzXghTQcNjur?tabId=Portfolio', {
+                    method: 'POST',
                     headers: {
-                        "Content-Type": "application/json"
-                    }
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify([
+                        [name, company, email, message, new Date().toLocaleString()],
+                    ]),
                 }
             );
-            const json = await response.json();
-            console.log("Success:", JSON.stringify(json));
-            setMessage("Success");
-        } catch (error) {
-            console.error("Error:", error);
-            setMessage("Error");
-        }
-    };
+                await response.json();
+                setData({ 
+                    ...data, 
+                    name: "", 
+                    company: "", 
+                    email: "", 
+                    message:"" 
+                });
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setMessage(true);
-      e.target.reset();
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const thankYou = () => {
+        alert('Thank you for your message. I will reach out as soon as possible!')
     }
 
     return (
@@ -46,13 +54,12 @@ export default function Contact() {
             <h1>Contact</h1>
             <h3>(Let's chat over a coffee and a bagel!)</h3>
             <div className="form">
-                <form className="input-form" onSubmit={handleSubmit, sendData}>
-                    <input type="text" name="name" placeholder="Name" onChange={handleInput} required/>
-                    <input type="text" name="company" placeholder="Company Name (optional)" onChange={handleInput}/>
-                    <input type="text" name="email" placeholder="Email" onChange={handleInput} required/>
-                    <textarea name="message" placeholder="Message" onChange={handleInput} required></textarea>
-                    <button type="submit">Send</button>
-                    {message && <span>Thanks, I'll get back with you very soon! :)</span>}
+                <form className="input-form" onSubmit={handleSubmit}>
+                    <input type="text" name="name" placeholder="Name" onChange={handleChange} required/>
+                    <input type="text" name="company" placeholder="Company Name (optional)" onChange={handleChange}/>
+                    <input type="text" name="email" placeholder="Email" onChange={handleChange} required/>
+                    <textarea name="message" placeholder="Message" onChange={handleChange} required></textarea>
+                    <button onClick={thankYou} type="submit">Send</button>
                 </form>
             </div>
         </div>

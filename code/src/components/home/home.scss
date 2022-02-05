@@ -41,10 +41,12 @@
                     font-weight: 300;
                     font-family: $source;
                     color: $teal;
+                    margin-left: 1rem;
                 }
             }
 
             .ityped-cursor{
+                margin-left: -1rem;
                 animation: blink 1s infinite;
             }
     

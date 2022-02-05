@@ -37,8 +37,10 @@
   font-weight: 300;
   font-family: source-code-pro, monospace;
   color: #107E7D;
+  margin-left: 1rem;
 }
 .home .text-box .bottom-text-home .ityped-cursor {
+  margin-left: -1rem;
   animation: blink 1s infinite;
 }
 @keyframes blink {
