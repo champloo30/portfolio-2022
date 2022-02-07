@@ -1,22 +1,27 @@
 import "./navbar.scss";
-import { useState } from "react";
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsDarkModeActive }) {
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 1 && isDarkModeActive === "light") {
+    if (window.scrollY >= 1 && isDarkModeActive === false) {
       document.querySelector('.navbar').style.backgroundColor = 'var(--gunmetal)';
       document.querySelector('.logo').style.color = 'var(--bone)';
       document.getElementById('line1').style.backgroundColor = 'var(--bone)';
       document.getElementById('line2').style.backgroundColor = 'var(--bone)';
       document.getElementById('line3').style.backgroundColor = 'var(--bone)';
-    } else if (window.scrollY >= 1 && isDarkModeActive === "dark") {
-      document.querySelector('.navbar').style.backgroundColor = 'var(--bone)';
+    } else if (window.scrollY >= 1 && isDarkModeActive === true) {
+      document.querySelector('.navbar-dark').style.backgroundColor = 'var(--bone)';
       document.querySelector('.logo').style.color = 'var(--gunmetal)';
       document.getElementById('line1').style.backgroundColor = 'var(--gunmetal)';
       document.getElementById('line2').style.backgroundColor = 'var(--gunmetal)';
       document.getElementById('line3').style.backgroundColor = 'var(--gunmetal)';
-    } else {
+    } else if (isDarkModeActive === true) {
+      document.querySelector('.navbar-dark').style.backgroundColor = '';
+      document.querySelector('.logo').style.color = '';
+      document.getElementById('line1').style.backgroundColor = '';
+      document.getElementById('line2').style.backgroundColor = '';
+      document.getElementById('line3').style.backgroundColor = '';
+    } else if (isDarkModeActive === false) {
       document.querySelector('.navbar').style.backgroundColor = '';
       document.querySelector('.logo').style.color = '';
       document.getElementById('line1').style.backgroundColor = '';
@@ -27,8 +32,6 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
   };
   window.addEventListener('scroll', changeNavbarColor)
 
-  const [isDarkModeActive, setIsDarkModeActive] = useState(false);
-
   const switchModes = (mode) => {
     if (mode === "light") {
       setIsDarkModeActive(false)
@@ -38,7 +41,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
   }
 
   return (
-    <div className={"navbar " + (menuOpen && "active") + (isDarkModeActive ? "navbar navbar-dark" : "navbar")} onScroll={changeNavbarColor} >
+    <div className={isDarkModeActive ? "navbar-dark " + (menuOpen && "active-dark") : "navbar " + (menuOpen && "active")} onScroll={changeNavbarColor} >
       <div className="container">
         <div className="left">
           <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>DJLD</a>

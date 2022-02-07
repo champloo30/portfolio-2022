@@ -1,4 +1,4 @@
-.footer-dark {
+.footer {
   height: 70px;
   width: 100%;
   background-color: transparent;
@@ -7,11 +7,11 @@
   align-items: center;
   justify-content: center;
 }
-.footer-dark a {
+.footer a {
   text-decoration: none;
   margin-left: 77rem;
 }
-.footer-dark a h3 {
+.footer a h3 {
   font-size: 1.5rem;
   font-weight: 300;
   font-family: freight-display-pro, serif;

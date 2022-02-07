@@ -1,9 +1,9 @@
 import "./portfolio.scss";
 import pkmo from "../../assets/pkmo-screenshot.png"
 
-export default function Portfolio() {
+export default function Portfolio({ isDarkModeActive }) {
   return (
-    <div className="portfolio-dark" id="portfolio">
+    <div className={isDarkModeActive ? "portfolio-dark" : "portfolio"} id="portfolio">
       <h1>Portfolio</h1>
       <div className="item-container">
         <div className="item">

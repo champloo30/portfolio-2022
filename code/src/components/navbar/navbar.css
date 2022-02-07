@@ -160,21 +160,21 @@
   background-color: #F9F6EE;
   color: #232C33;
 }
-.navbar-dark.active {
+.navbar-dark.active-dark {
   background-color: #F9F6EE;
 }
-.navbar-dark.active .left .logo {
+.navbar-dark.active-dark .left .logo {
   color: #232C33;
 }
-.navbar-dark.active .right .hamburger span:first-child {
+.navbar-dark.active-dark .right .hamburger span:first-child {
   background-color: #232C33;
   transform: rotate(45deg);
 }
-.navbar-dark.active .right .hamburger span:nth-child(2) {
+.navbar-dark.active-dark .right .hamburger span:nth-child(2) {
   background-color: #232C33;
   opacity: 0;
 }
-.navbar-dark.active .right .hamburger span:last-child {
+.navbar-dark.active-dark .right .hamburger span:last-child {
   background-color: #232C33;
   transform: rotate(-45deg);
 }

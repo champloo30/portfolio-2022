@@ -2,7 +2,7 @@
 
 .about {
     height: 100vh;
-    background-color: var(--background-two);
+    background-color: $teal;
     display: flex;
     align-items: center;
 
@@ -23,7 +23,7 @@
             font-size: 2.5rem;
             font-weight: 400;
             font-family: $display;
-            color: var(--tertiary-text);
+            color: $salmon;
         }
 
         .po-icons {
@@ -72,14 +72,14 @@
         h1 {
             font-size: 4rem;
             font-weight: 300;
-            color: var(--tertiary-text);
+            color: $salmon;
         }
 
         p {
             font-size: 1.5rem;
             font-weight: 300;
             font-family: $display;
-            color: var(--secondary-text);
+            color: $bone;
             text-align: center;
             margin-top: -2rem;
         }
@@ -87,7 +87,7 @@
         h2 {
             font-size: 3rem;
             font-weight: 300;
-            color: var(--tertiary-text);
+            color: $salmon;
         }
 
         .icon {

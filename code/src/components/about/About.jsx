@@ -11,9 +11,9 @@ import react from "../../assets/icons8-react-native.svg";
 import sass from "../../assets/icons8-sass.svg";
 import pdf from "../../assets/Dalyn_J.L._Dunn_Resume.pdf";
 
-export default function About() {
+export default function About({ isDarkModeActive }) {
   return (
-    <div className="about-dark" id="about">
+    <div className={isDarkModeActive ? "about-dark" : "about"} id="about">
       <div className="part-one">
         <img src={avatar} alt="Avatar of Me" className="avatar" />
         <h2>Dalyn J. L. Dunn</h2>

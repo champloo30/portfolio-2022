@@ -1,7 +1,7 @@
 import "./contact.scss";
 import { useState } from "react";
 
-export default function Contact() {
+export default function Contact({ isDarkModeActive }) {
 
     const [data, setData] = useState({
         name: "",
@@ -50,7 +50,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact-dark" id="contact">
+        <div className={isDarkModeActive ? "contact-dark" : "contact"} id="contact">
             <h1>Contact</h1>
             <h3>(Let's chat over a coffee and a bagel!)</h3>
             <div className="form">

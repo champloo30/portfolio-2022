@@ -2,7 +2,7 @@ import "./home.scss";
 import { init } from 'ityped'
 import { useEffect, useRef } from "react"
 
-export default function Home( isDarkModeActive ) {
+export default function Home( { isDarkModeActive } ) {
   const textRef = useRef()
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function Home( isDarkModeActive ) {
 
 
   return (
-    <div className={"home " + (isDarkModeActive ? "home home-dark" : "home")} id="home">
+    <div className={isDarkModeActive ? "home-dark" : "home"} id="home">
       <div className="text-box">
         <h2>Hello there, I'm</h2>
         <h1>Dalyn J. L. Dunn</h1>
