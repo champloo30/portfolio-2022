@@ -81,4 +81,87 @@
   margin-top: -2rem;
 }
 
+.about-dark {
+  height: 100vh;
+  background-color: #374558;
+  display: flex;
+  align-items: center;
+}
+.about-dark .part-one {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-dark .part-one .avatar {
+  width: 30rem;
+  height: 30rem;
+  margin-top: 2rem;
+}
+.about-dark .part-one h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: freight-display-pro, serif;
+  color: #B79492;
+}
+.about-dark .part-one .po-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.about-dark .part-one .po-icons .icon {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .about-dark .part-one .po-icons .icon:hover {
+    animation: moveUp 1s ease;
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.about-dark .part-two {
+  height: 30rem;
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.about-dark .part-two h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #B79492;
+}
+.about-dark .part-two p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: freight-display-pro, serif;
+  color: #F9F6EE;
+  text-align: center;
+  margin-top: -2rem;
+}
+.about-dark .part-two h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #B79492;
+}
+.about-dark .part-two .icon {
+  height: 5rem;
+  width: 5rem;
+  margin-top: -2rem;
+}
+
 /*# sourceMappingURL=about.css.map */

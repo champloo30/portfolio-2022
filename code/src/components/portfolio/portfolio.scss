@@ -2,7 +2,7 @@
 
 .portfolio {
     height: 100vh;
-    background-color: var(--background-one);
+    background-color: $bone;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,8 +11,8 @@
     h1 {
         font-size: 5rem;
         font-family: $display;
-        font-weight: 400;
-        color: var(--primary-accent);
+        font-weight: 300;
+        color: $teal;
         margin-top: 1.5rem;
     }
 
@@ -33,7 +33,7 @@
                 flex: 2.5;
                 height: 7.5rem;
                 width: 5rem;
-                background-color: var(--secondary-accent);
+                background-color: $gunmetal;
                 border-radius: 10px;
                 cursor: pointer;
 
@@ -53,14 +53,83 @@
                 margin-left: 2rem;
 
                 h2 {
-                    color: var(--tertiary-text);
+                    color: $salmon;
                     font-family: $display;
                     font-weight: 400;
                     font-size: 2.25rem;
                 }
 
                 p {
-                    color: var(--primary-text);
+                    color: $purpleNavy;
+                    font-weight: 300;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-dark {
+    height: 100vh;
+    background-color: $gunmetal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+        font-size: 5rem;
+        font-family: $display;
+        font-weight: 300;
+        color: $eton;
+        margin-top: 1.5rem;
+    }
+
+    .item-container {
+        height: 65vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .website-box {
+                flex: 2.5;
+                height: 7.5rem;
+                width: 5rem;
+                background-color: $charcoal;
+                border-radius: 10px;
+                cursor: pointer;
+
+                .portfolio-img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .text-box {
+                flex: 9.5;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                margin-left: 2rem;
+
+                h2 {
+                    color: $rosy;
+                    font-family: $display;
+                    font-weight: 400;
+                    font-size: 2.25rem;
+                }
+
+                p {
+                    color: $bone;
                     font-weight: 300;
                     font-size: 1.25rem;
                 }

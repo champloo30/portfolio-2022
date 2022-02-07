@@ -1,8 +1,8 @@
 @import "../../global.scss";
 
-.home{
+.home {
     height: 100vh;
-    background-color: var(--background-one);
+    background-color: $bone;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,7 +10,7 @@
 
     .text-box{
         height: 60vh;
-        color: var(--primary-text);
+        color: $purpleNavy;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -25,7 +25,7 @@
             font-size: 7rem;
             font-family: $display;
             font-weight: 400;
-            color: var(--tertiary-text);
+            color: $salmon;
             margin-top: -1rem;
         }
     
@@ -40,7 +40,7 @@
                 span{
                     font-weight: 300;
                     font-family: $source;
-                    color: var(--primary-accent);
+                    color: $teal;
                     margin-left: 1rem;
                 }
             }
@@ -56,6 +56,28 @@
                 }
                 100%{
                     opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.home-dark {
+    background-color: $gunmetal;
+
+    .text-box{
+        color: $bone;
+    
+        h1{
+            color: $rosy;
+        }
+    
+        .bottom-text-home{
+    
+            h3{
+
+                span{
+                    color: $eton;
                 }
             }
         }

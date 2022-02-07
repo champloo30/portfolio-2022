@@ -3,7 +3,7 @@ import pkmo from "../../assets/pkmo-screenshot.png"
 
 export default function Portfolio() {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio-dark" id="portfolio">
       <h1>Portfolio</h1>
       <div className="item-container">
         <div className="item">

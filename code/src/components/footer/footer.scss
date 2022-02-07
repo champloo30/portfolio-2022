@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.footer{
+.footer-dark {
     height: 70px;
     width: 100%;
     background-color: transparent;
@@ -17,7 +17,29 @@
             font-size: 1.5rem;
             font-weight: 300;
             font-family: $display;
-            color: var(--secondary-text);
+            color: $bone;
+        }
+    }
+}
+
+.footer-dark {
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        margin-left: 77rem;
+        
+        h3{
+            font-size: 1.5rem;
+            font-weight: 300;
+            font-family: $display;
+            color: $bone;
         }
     }
 }

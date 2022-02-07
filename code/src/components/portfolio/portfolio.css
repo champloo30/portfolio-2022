@@ -1,6 +1,6 @@
 .portfolio {
   height: 100vh;
-  background-color: var(--background-one);
+  background-color: #F9F6EE;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,8 @@
 .portfolio h1 {
   font-size: 5rem;
   font-family: freight-display-pro, serif;
-  font-weight: 400;
-  color: var(--primary-accent);
+  font-weight: 300;
+  color: #107E7D;
   margin-top: 1.5rem;
 }
 .portfolio .item-container {
@@ -30,7 +30,7 @@
   flex: 2.5;
   height: 7.5rem;
   width: 5rem;
-  background-color: var(--secondary-accent);
+  background-color: #232C33;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -48,13 +48,74 @@
   margin-left: 2rem;
 }
 .portfolio .item-container .item .text-box h2 {
-  color: var(--tertiary-text);
+  color: #F38375;
   font-family: freight-display-pro, serif;
   font-weight: 400;
   font-size: 2.25rem;
 }
 .portfolio .item-container .item .text-box p {
-  color: var(--primary-text);
+  color: #585481;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.portfolio-dark {
+  height: 100vh;
+  background-color: #232C33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portfolio-dark h1 {
+  font-size: 5rem;
+  font-family: freight-display-pro, serif;
+  font-weight: 300;
+  color: #A1CCA5;
+  margin-top: 1.5rem;
+}
+.portfolio-dark .item-container {
+  height: 65vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.portfolio-dark .item-container .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.portfolio-dark .item-container .item .website-box {
+  flex: 2.5;
+  height: 7.5rem;
+  width: 5rem;
+  background-color: #374558;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.portfolio-dark .item-container .item .website-box .portfolio-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.portfolio-dark .item-container .item .text-box {
+  flex: 9.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+.portfolio-dark .item-container .item .text-box h2 {
+  color: #B79492;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+.portfolio-dark .item-container .item .text-box p {
+  color: #F9F6EE;
   font-weight: 300;
   font-size: 1.25rem;
 }

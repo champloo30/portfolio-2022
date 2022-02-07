@@ -3,9 +3,9 @@ import person from "../../assets/icons8-person.svg";
 import briefcase from "../../assets/icons8-briefcase.svg";
 import iphone from "../../assets/icons8-iphone-x.svg";
 
-export default function Menu({ menuOpen, setMenuOpen }) {
+export default function Menu({ menuOpen, setMenuOpen, isDarkModeActive }) {
   return (
-    <div className={"menu " + (menuOpen && "active")}>
+    <div className={"menu " + (menuOpen && "active") + (isDarkModeActive ? "menu menu-dark" : "menu")}>
       <div className="about">
         <a href="#about" className="about-container" onClick={()=>setMenuOpen(false)}>
           <img src={person} alt="Person Icon" className="icon" />

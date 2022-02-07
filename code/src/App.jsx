@@ -9,14 +9,14 @@ import "./app.scss";
 import "./global.scss";
 import { useState } from "react";
 
-function App() {
+function App( isDarkModeActive ) {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkModeActive={isDarkModeActive} />
       <div className="section">
         <Home />
         <About />

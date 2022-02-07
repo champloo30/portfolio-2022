@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function Navbar({ menuOpen, setMenuOpen }) {
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 1 && setIsDarkModeActive(true)) {
+    if (window.scrollY >= 1 && isDarkModeActive === "light") {
       document.querySelector('.navbar').style.backgroundColor = 'var(--gunmetal)';
       document.querySelector('.logo').style.color = 'var(--bone)';
       document.getElementById('line1').style.backgroundColor = 'var(--bone)';
       document.getElementById('line2').style.backgroundColor = 'var(--bone)';
       document.getElementById('line3').style.backgroundColor = 'var(--bone)';
-    } else if (window.scrollY >= 1 && setIsDarkModeActive(false)) {
+    } else if (window.scrollY >= 1 && isDarkModeActive === "dark") {
       document.querySelector('.navbar').style.backgroundColor = 'var(--bone)';
       document.querySelector('.logo').style.color = 'var(--gunmetal)';
       document.getElementById('line1').style.backgroundColor = 'var(--gunmetal)';

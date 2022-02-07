@@ -1,6 +1,6 @@
 .home {
   height: 100vh;
-  background-color: var(--background-one);
+  background-color: #F9F6EE;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -8,7 +8,7 @@
 }
 .home .text-box {
   height: 60vh;
-  color: var(--primary-text);
+  color: #585481;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,7 +22,7 @@
   font-size: 7rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: var(--tertiary-text);
+  color: #F38375;
   margin-top: -1rem;
 }
 .home .text-box .bottom-text-home {
@@ -36,7 +36,7 @@
 .home .text-box .bottom-text-home h3 span {
   font-weight: 300;
   font-family: source-code-pro, monospace;
-  color: var(--primary-accent);
+  color: #107E7D;
   margin-left: 1rem;
 }
 .home .text-box .bottom-text-home .ityped-cursor {
@@ -50,6 +50,19 @@
   100% {
     opacity: 0;
   }
+}
+
+.home-dark {
+  background-color: #232C33;
+}
+.home-dark .text-box {
+  color: #F9F6EE;
+}
+.home-dark .text-box h1 {
+  color: #B79492;
+}
+.home-dark .text-box .bottom-text-home h3 span {
+  color: #A1CCA5;
 }
 
 /*# sourceMappingURL=home.css.map */

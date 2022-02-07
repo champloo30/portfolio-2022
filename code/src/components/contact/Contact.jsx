@@ -50,7 +50,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact" id="contact">
+        <div className="contact-dark" id="contact">
             <h1>Contact</h1>
             <h3>(Let's chat over a coffee and a bagel!)</h3>
             <div className="form">
