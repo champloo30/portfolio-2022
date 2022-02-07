@@ -15,10 +15,9 @@
     justify-content: center;
     transition: all 1.5s ease;
 
-    .about {
+    .about-menu {
         width: 80%;
         height: 10rem;
-        background-color: $salmon;
 
         .about-container {
             display: flex;
@@ -39,10 +38,9 @@
         }
     }
     
-    .portfolio {
+    .portfolio-menu {
         width: 80%;
         height: 10rem;
-        background-color: $salmon;
         
         .portfolio-container {
             display: flex;
@@ -63,17 +61,15 @@
         }
     }
 
-    .contact {
+    .contact-menu {
         width: 80%;
         height: 10rem;
-        background-color: $salmon;
         
         .contact-container {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             text-decoration: none;
-            margin-left: -2.25rem;
 
             .icon {
                 cursor: pointer;
@@ -112,10 +108,9 @@
     justify-content: center;
     transition: all 1.5s ease;
 
-    .about {
+    .about-menu {
         width: 80%;
         height: 10rem;
-        background-color: $rosy;
 
         .about-container {
             display: flex;
@@ -136,10 +131,9 @@
         }
     }
     
-    .portfolio {
+    .portfolio-menu {
         width: 80%;
         height: 10rem;
-        background-color: $rosy;
         
         .portfolio-container {
             display: flex;
@@ -160,17 +154,15 @@
         }
     }
 
-    .contact {
+    .contact-menu {
         width: 80%;
         height: 10rem;
-        background-color: $rosy;
         
         .contact-container {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             text-decoration: none;
-            margin-left: -2.25rem;
 
             .icon {
                 cursor: pointer;

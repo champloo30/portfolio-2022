@@ -13,62 +13,58 @@
   justify-content: center;
   transition: all 1.5s ease;
 }
-.menu .about {
+.menu .about-menu {
   width: 80%;
   height: 10rem;
-  background-color: #F38375;
 }
-.menu .about .about-container {
+.menu .about-menu .about-container {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.menu .about .about-container .icon {
+.menu .about-menu .about-container .icon {
   cursor: pointer;
 }
-.menu .about .about-container h2 {
+.menu .about-menu .about-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
   margin-left: 1rem;
   cursor: pointer;
 }
-.menu .portfolio {
+.menu .portfolio-menu {
   width: 80%;
   height: 10rem;
-  background-color: #F38375;
 }
-.menu .portfolio .portfolio-container {
+.menu .portfolio-menu .portfolio-container {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.menu .portfolio .portfolio-container .icon {
+.menu .portfolio-menu .portfolio-container .icon {
   cursor: pointer;
 }
-.menu .portfolio .portfolio-container h2 {
+.menu .portfolio-menu .portfolio-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
   margin-left: 1rem;
   cursor: pointer;
 }
-.menu .contact {
+.menu .contact-menu {
   width: 80%;
   height: 10rem;
-  background-color: #F38375;
 }
-.menu .contact .contact-container {
+.menu .contact-menu .contact-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
-  margin-left: -2.25rem;
 }
-.menu .contact .contact-container .icon {
+.menu .contact-menu .contact-container .icon {
   cursor: pointer;
 }
-.menu .contact .contact-container h2 {
+.menu .contact-menu .contact-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
@@ -97,62 +93,58 @@
   justify-content: center;
   transition: all 1.5s ease;
 }
-.menu-dark .about {
+.menu-dark .about-menu {
   width: 80%;
   height: 10rem;
-  background-color: #B79492;
 }
-.menu-dark .about .about-container {
+.menu-dark .about-menu .about-container {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.menu-dark .about .about-container .icon {
+.menu-dark .about-menu .about-container .icon {
   cursor: pointer;
 }
-.menu-dark .about .about-container h2 {
+.menu-dark .about-menu .about-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
   margin-left: 1rem;
   cursor: pointer;
 }
-.menu-dark .portfolio {
+.menu-dark .portfolio-menu {
   width: 80%;
   height: 10rem;
-  background-color: #B79492;
 }
-.menu-dark .portfolio .portfolio-container {
+.menu-dark .portfolio-menu .portfolio-container {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.menu-dark .portfolio .portfolio-container .icon {
+.menu-dark .portfolio-menu .portfolio-container .icon {
   cursor: pointer;
 }
-.menu-dark .portfolio .portfolio-container h2 {
+.menu-dark .portfolio-menu .portfolio-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
   margin-left: 1rem;
   cursor: pointer;
 }
-.menu-dark .contact {
+.menu-dark .contact-menu {
   width: 80%;
   height: 10rem;
-  background-color: #B79492;
 }
-.menu-dark .contact .contact-container {
+.menu-dark .contact-menu .contact-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
-  margin-left: -2.25rem;
 }
-.menu-dark .contact .contact-container .icon {
+.menu-dark .contact-menu .contact-container .icon {
   cursor: pointer;
 }
-.menu-dark .contact .contact-container h2 {
+.menu-dark .contact-menu .contact-container h2 {
   color: #F9F6EE;
   font-size: 2rem;
   font-weight: 300;
