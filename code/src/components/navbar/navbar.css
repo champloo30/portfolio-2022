@@ -4,7 +4,7 @@
   background-color: transparent;
   z-index: 3;
   position: fixed;
-  color: #107E7D;
+  color: #232C33;
   transition: all 1s ease;
 }
 .navbar .container {
@@ -23,10 +23,12 @@
 .navbar .container .right {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .navbar .container .right .hamburger {
   width: 32px;
   height: 25px;
+  margin-right: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,9 +41,37 @@
   transform-origin: left;
   transition: all 1.5s ease;
 }
-.navbar.active {
-  background-color: #F38375;
+.navbar .container .right .toggle-dark, .navbar .container .right .toggle-light {
+  display: flex;
+  padding: 3px;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 3rem;
+}
+.navbar .container .right .toggle-dark {
+  background-color: #232C33;
+}
+.navbar .container .right .toggle-light {
+  background-color: #F9F6EE;
+}
+.navbar .container .right .dark-mode, .navbar .container .right .light-mode {
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 3.125rem;
+  text-align: center;
+}
+.navbar .container .right .dark-mode {
+  background-color: #232C33;
   color: #F9F6EE;
+}
+.navbar .container .right .light-mode {
+  background-color: #F9F6EE;
+  color: #232C33;
+}
+.navbar.active {
+  background-color: #232C33;
 }
 .navbar.active .left .logo {
   color: #F9F6EE;
@@ -56,6 +86,96 @@
 }
 .navbar.active .right .hamburger span:last-child {
   background-color: #F9F6EE;
+  transform: rotate(-45deg);
+}
+
+.navbar-dark {
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 3;
+  position: fixed;
+  color: #F9F6EE;
+  transition: all 1s ease;
+}
+.navbar-dark .container {
+  padding: 8px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-dark .container .left .logo {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: freight-display-pro, serif;
+  text-decoration: none;
+  color: #F9F6EE;
+}
+.navbar-dark .container .right {
+  display: flex;
+  align-items: center;
+}
+.navbar-dark .container .right .hamburger {
+  width: 32px;
+  height: 25px;
+  margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar-dark .container .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #F9F6EE;
+  transform-origin: left;
+  transition: all 1.5s ease;
+}
+.navbar-dark .container .right .toggle-dark, .navbar-dark .container .right .toggle-light {
+  display: flex;
+  padding: 3px;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 3rem;
+}
+.navbar-dark .container .right .toggle-dark {
+  background-color: #232C33;
+}
+.navbar-dark .container .right .toggle-light {
+  background-color: #F9F6EE;
+}
+.navbar-dark .container .right .dark-mode, .navbar-dark .container .right .light-mode {
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50px;
+  text-align: center;
+}
+.navbar-dark .container .right .dark-mode {
+  background-color: #232C33;
+  color: #F9F6EE;
+}
+.navbar-dark .container .right .light-mode {
+  background-color: #F9F6EE;
+  color: #232C33;
+}
+.navbar-dark.active {
+  background-color: #F9F6EE;
+}
+.navbar-dark.active .left .logo {
+  color: #232C33;
+}
+.navbar-dark.active .right .hamburger span:first-child {
+  background-color: #232C33;
+  transform: rotate(45deg);
+}
+.navbar-dark.active .right .hamburger span:nth-child(2) {
+  background-color: #232C33;
+  opacity: 0;
+}
+.navbar-dark.active .right .hamburger span:last-child {
+  background-color: #232C33;
   transform: rotate(-45deg);
 }
 

@@ -2,7 +2,7 @@
 
 .home{
     height: 100vh;
-    background-color: $bone;
+    background-color: var(--background-one);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,7 +10,7 @@
 
     .text-box{
         height: 60vh;
-        color: $purpleNavy;
+        color: var(--primary-text);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -25,7 +25,7 @@
             font-size: 7rem;
             font-family: $display;
             font-weight: 400;
-            color: $salmon;
+            color: var(--tertiary-text);
             margin-top: -1rem;
         }
     
@@ -40,7 +40,7 @@
                 span{
                     font-weight: 300;
                     font-family: $source;
-                    color: $teal;
+                    color: var(--primary-accent);
                     margin-left: 1rem;
                 }
             }

@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact{
-    background-color: $purpleNavy;
+    background-color: var(--background-three);
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -10,13 +10,13 @@
 
     h1{
         font-size: 4rem;
-        color: $bone;
+        color: var(--secondary-text);
         font-weight: 300;
         margin-top: -3rem;
     }
 
     h3{
-        color: $salmon;
+        color: var(--tertiary-text);
         font-weight: 300;
         font-size: 1.75rem;
         font-family: $display;
@@ -42,9 +42,9 @@
                 width: 31.5rem;
                 height: 2.5rem;
                 font-size: 1.5rem;
-                background-color: $purpleNavy;
-                color: $bone;
-                border: 1px solid $teal;
+                background-color: var(--background-three);
+                color: var(--secondary-text);
+                border: 1px solid var(--primary-accent);
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -53,7 +53,7 @@
                 font-size: 1.25rem;
 
                 &::placeholder{
-                    color: $bone;
+                    color: var(--secondary-text);
                 }
 
                 &:focus{
@@ -65,9 +65,9 @@
                 width: 31.5rem;
                 height: 12.5rem;
                 font-size: 1.5rem;
-                background-color: $purpleNavy;
-                color: $bone;
-                border: 1px solid $teal;
+                background-color: var(--background-three);
+                color: var(--secondary-text);
+                border: 1px solid var(--primary-accent);
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -77,7 +77,7 @@
                 font-size: 1.25rem;
 
                 &::placeholder{
-                    color: $bone;
+                    color: var(--secondary-text);
                 }
 
                 &:focus{
@@ -88,9 +88,9 @@
             button{
                 width: 7rem;
                 height: 3rem;
-                color: $salmon;
-                background-color: $purpleNavy;
-                border: 1px solid $salmon;
+                color: var(--tertiary-text);
+                background-color: var(--background-three);
+                border: 1px solid var(--tertiary-text);
                 border-radius: 10px;
                 font-size: 1.5rem;
                 transition: all 0.5s ease;
@@ -99,18 +99,13 @@
                 margin: auto;
 
                 &:hover{
-                    background-color: $salmon;
-                    color: $purpleNavy;
+                    background-color: var(--tertiary-text);
+                    color: var(--primary-text);
                 }
 
                 &:focus{
                     outline: none;
                 }
-            }
-
-            #afterSubmitText{
-                color: $teal;
-                text-align: center;
             }
         }
     }

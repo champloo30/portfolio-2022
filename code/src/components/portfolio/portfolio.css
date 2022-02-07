@@ -1,6 +1,6 @@
 .portfolio {
   height: 100vh;
-  background-color: #F9F6EE;
+  background-color: var(--background-one);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   font-size: 5rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: #107E7D;
+  color: var(--primary-accent);
   margin-top: 1.5rem;
 }
 .portfolio .item-container {
@@ -30,8 +30,9 @@
   flex: 2.5;
   height: 7.5rem;
   width: 5rem;
-  background-color: #232C33;
+  background-color: var(--secondary-accent);
   border-radius: 10px;
+  cursor: pointer;
 }
 .portfolio .item-container .item .website-box .portfolio-img {
   height: 100%;
@@ -47,13 +48,13 @@
   margin-left: 2rem;
 }
 .portfolio .item-container .item .text-box h2 {
-  color: #F38375;
+  color: var(--tertiary-text);
   font-family: freight-display-pro, serif;
   font-weight: 400;
   font-size: 2.25rem;
 }
 .portfolio .item-container .item .text-box p {
-  color: #585481;
+  color: var(--primary-text);
   font-weight: 300;
   font-size: 1.25rem;
 }

@@ -6,7 +6,7 @@
     background-color: transparent;
     z-index: 3;
     position: fixed;
-    color: $teal;
+    color: $gunmetal;
     transition: all 1s ease;
 
     .container {
@@ -28,10 +28,12 @@
         .right {
             display: flex;
             align-items: center;
+            justify-content: center;
         
             .hamburger {
                 width: 32px;
                 height: 25px;
+                margin-right: 10rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -45,12 +47,46 @@
                     transition: all 1.5s ease;
                 }
             }
+
+            .toggle-dark, .toggle-light {
+                display: flex;
+                padding: 3px;
+                border-radius: 4px;
+                position: absolute;
+                margin-left: 3rem;
+            }
+
+            .toggle-dark {
+                background-color: $gunmetal
+            }
+
+            .toggle-light {
+                background-color: $bone
+            }
+
+            .dark-mode, .light-mode {
+                margin: 3px;
+                padding: 3px;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 3.125rem;
+                text-align: center;
+            }
+
+            .dark-mode {
+                background-color: $gunmetal;
+                color: $bone;
+            }
+
+            .light-mode {
+                background-color: $bone;
+                color: $gunmetal;
+            }
         }
     }
 
     &.active {
-        background-color: $salmon;
-        color: $bone;
+        background-color: $gunmetal;
         
         .left {
             
@@ -77,6 +113,126 @@
     
                     &:last-child {
                         background-color: $bone;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 3;
+    position: fixed;
+    color: $bone;
+    transition: all 1s ease;
+
+    .container {
+        padding: 8px 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .left {
+    
+            .logo {
+                font-size: 40px;
+                font-weight: 500;
+                font-family: $display;
+                text-decoration: none;
+                color: $bone;
+            }
+        } 
+        .right {
+            display: flex;
+            align-items: center;
+        
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                margin-right: 10rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+        
+                span {
+                    width: 100%;
+                    height: 3px;
+                    background-color: $bone;
+                    transform-origin: left;
+                    transition: all 1.5s ease;
+                }
+            }
+
+            .toggle-dark, .toggle-light {
+                display: flex;
+                padding: 3px;
+                border-radius: 4px;
+                position: absolute;
+                margin-left: 3rem;
+            }
+
+            .toggle-dark {
+                background-color: $gunmetal
+            }
+
+            .toggle-light {
+                background-color: $bone
+            }
+
+            .dark-mode, .light-mode {
+                margin: 3px;
+                padding: 3px;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .dark-mode {
+                background-color: $gunmetal;
+                color: $bone;
+            }
+
+            .light-mode {
+                background-color: $bone;
+                color: $gunmetal;
+            }
+        }
+    }
+
+    &.active {
+        background-color: $bone;
+        
+        .left {
+            
+            .logo {
+                color: $gunmetal;
+            }
+        }
+    
+        .right {
+
+            .hamburger {
+
+                span {
+    
+                    &:first-child {
+                        background-color: $gunmetal;
+                        transform: rotate(45deg);
+                    }
+    
+                    &:nth-child(2) {
+                        background-color: $gunmetal;
+                        opacity: 0;
+                    }
+    
+                    &:last-child {
+                        background-color: $gunmetal;
                         transform: rotate(-45deg);
                     }
                 }
