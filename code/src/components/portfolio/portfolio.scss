@@ -41,11 +41,11 @@
             width: 100%;
             display: flex;
             align-items: center;
+            margin-bottom: 1rem;
 
             @include mobile {
                 flex-direction: column;
                 justify-content: space-evenly;
-                margin-bottom: 1rem;
             }
 
             .website-box {
@@ -154,6 +154,7 @@
             width: 100%;
             display: flex;
             align-items: center;
+            margin-bottom: 1rem;
 
             @include mobile {
                 flex-direction: column;
