@@ -4,6 +4,21 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 425px) {
+  .about {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 .about .part-one {
   flex: 5;
   display: flex;
@@ -16,11 +31,23 @@
   height: 30rem;
   margin-top: 2rem;
 }
+@media (max-width: 425px) {
+  .about .part-one .avatar {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 0;
+  }
+}
 .about .part-one h2 {
   font-size: 2.5rem;
   font-weight: 400;
   font-family: freight-display-pro, serif;
   color: #F38375;
+}
+@media (max-width: 425px) {
+  .about .part-one h2 {
+    font-size: 2.25rem;
+  }
 }
 .about .part-one .po-icons {
   display: flex;
@@ -32,7 +59,13 @@
   width: 3rem;
   cursor: pointer;
 }
-@media (min-width: 900px) {
+@media (max-width: 425px) {
+  .about .part-one .po-icons .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
   .about .part-one .po-icons .icon:hover {
     animation: moveUp 1s ease;
   }
@@ -57,10 +90,28 @@
   justify-content: space-evenly;
   margin-top: 5rem;
 }
+@media (max-width: 425px) {
+  .about .part-two {
+    height: 15rem;
+    width: 90%;
+    margin-top: 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .about .part-two {
+    height: 40rem;
+    margin-top: 0;
+  }
+}
 .about .part-two h1 {
   font-size: 4rem;
   font-weight: 300;
   color: #F38375;
+}
+@media (max-width: 425px) {
+  .about .part-two h1 {
+    font-size: 2.75rem;
+  }
 }
 .about .part-two p {
   font-size: 1.5rem;
@@ -70,15 +121,32 @@
   text-align: center;
   margin-top: -2rem;
 }
+@media (max-width: 425px) {
+  .about .part-two p {
+    margin-top: 0;
+  }
+}
 .about .part-two h2 {
   font-size: 3rem;
   font-weight: 300;
   color: #F38375;
 }
+@media (max-width: 425px) {
+  .about .part-two h2 {
+    font-size: 2.5rem;
+  }
+}
 .about .part-two .icon {
   height: 5rem;
   width: 5rem;
   margin-top: -2rem;
+}
+@media (max-width: 425px) {
+  .about .part-two .icon {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 0;
+  }
 }
 
 .about-dark {
@@ -86,6 +154,21 @@
   background-color: #374558;
   display: flex;
   align-items: center;
+}
+@media (max-width: 425px) {
+  .about-dark {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .about-dark {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 .about-dark .part-one {
   flex: 5;
@@ -99,11 +182,23 @@
   height: 30rem;
   margin-top: 2rem;
 }
+@media (max-width: 425px) {
+  .about-dark .part-one .avatar {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 0;
+  }
+}
 .about-dark .part-one h2 {
   font-size: 2.5rem;
   font-weight: 400;
   font-family: freight-display-pro, serif;
   color: #B79492;
+}
+@media (max-width: 425px) {
+  .about-dark .part-one h2 {
+    font-size: 2.25rem;
+  }
 }
 .about-dark .part-one .po-icons {
   display: flex;
@@ -115,7 +210,13 @@
   width: 3rem;
   cursor: pointer;
 }
-@media (min-width: 900px) {
+@media (max-width: 425px) {
+  .about-dark .part-one .po-icons .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
   .about-dark .part-one .po-icons .icon:hover {
     animation: moveUp 1s ease;
   }
@@ -140,10 +241,28 @@
   justify-content: space-evenly;
   margin-top: 5rem;
 }
+@media (max-width: 425px) {
+  .about-dark .part-two {
+    height: 15rem;
+    width: 90%;
+    margin-top: 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .about-dark .part-two {
+    height: 40rem;
+    margin-top: 0;
+  }
+}
 .about-dark .part-two h1 {
   font-size: 4rem;
   font-weight: 300;
   color: #B79492;
+}
+@media (max-width: 425px) {
+  .about-dark .part-two h1 {
+    font-size: 2.75rem;
+  }
 }
 .about-dark .part-two p {
   font-size: 1.5rem;
@@ -153,15 +272,32 @@
   text-align: center;
   margin-top: -2rem;
 }
+@media (max-width: 425px) {
+  .about-dark .part-two p {
+    margin-top: 0;
+  }
+}
 .about-dark .part-two h2 {
   font-size: 3rem;
   font-weight: 300;
   color: #B79492;
 }
+@media (max-width: 425px) {
+  .about-dark .part-two h2 {
+    font-size: 2.5rem;
+  }
+}
 .about-dark .part-two .icon {
   height: 5rem;
   width: 5rem;
   margin-top: -2rem;
+}
+@media (max-width: 425px) {
+  .about-dark .part-two .icon {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

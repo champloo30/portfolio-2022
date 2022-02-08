@@ -6,11 +6,27 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  .contact {
+    height: 75vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .contact {
+    height: 60vh;
+  }
+}
 .contact h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #F9F6EE;
   font-weight: 300;
   margin-top: -3rem;
+}
+@media (max-width: 425px) {
+  .contact h1 {
+    font-size: 4rem;
+    margin-top: -1rem;
+  }
 }
 .contact h3 {
   color: #F38375;
@@ -18,6 +34,11 @@
   font-size: 1.75rem;
   font-family: freight-display-pro, serif;
   margin-top: -1rem;
+}
+@media (max-width: 425px) {
+  .contact h3 {
+    font-size: 1.5rem;
+  }
 }
 .contact .form {
   display: flex;
@@ -48,6 +69,11 @@
   font-family: freight-display-pro, serif;
   font-size: 1.25rem;
 }
+@media (max-width: 425px) {
+  .contact .form .input-form input {
+    width: 20rem;
+  }
+}
 .contact .form .input-form input::placeholder {
   color: #F9F6EE;
 }
@@ -68,6 +94,11 @@
   padding-top: 10px;
   font-family: freight-display-pro, serif;
   font-size: 1.25rem;
+}
+@media (max-width: 425px) {
+  .contact .form .input-form textarea {
+    width: 20rem;
+  }
 }
 .contact .form .input-form textarea::placeholder {
   color: #F9F6EE;
@@ -104,11 +135,27 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  .contact-dark {
+    height: 75vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .contact-dark {
+    height: 60vh;
+  }
+}
 .contact-dark h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #F9F6EE;
   font-weight: 300;
   margin-top: -3rem;
+}
+@media (max-width: 425px) {
+  .contact-dark h1 {
+    font-size: 4rem;
+    margin-top: -1rem;
+  }
 }
 .contact-dark h3 {
   color: #A1CCA5;
@@ -116,6 +163,11 @@
   font-size: 1.75rem;
   font-family: freight-display-pro, serif;
   margin-top: -1rem;
+}
+@media (max-width: 425px) {
+  .contact-dark h3 {
+    font-size: 1.5rem;
+  }
 }
 .contact-dark .form {
   display: flex;
@@ -146,6 +198,11 @@
   font-family: freight-display-pro, serif;
   font-size: 1.25rem;
 }
+@media (max-width: 425px) {
+  .contact-dark .form .input-form input {
+    width: 20rem;
+  }
+}
 .contact-dark .form .input-form input::placeholder {
   color: #F9F6EE;
 }
@@ -166,6 +223,11 @@
   padding-top: 10px;
   font-family: freight-display-pro, serif;
   font-size: 1.25rem;
+}
+@media (max-width: 425px) {
+  .contact-dark .form .input-form textarea {
+    width: 20rem;
+  }
 }
 .contact-dark .form .input-form textarea::placeholder {
   color: #F9F6EE;

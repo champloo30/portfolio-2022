@@ -3,6 +3,7 @@ import { init } from 'ityped'
 import { useEffect, useRef } from "react"
 
 export default function Home( { isDarkModeActive } ) {
+  
   const textRef = useRef()
 
   useEffect(() => {

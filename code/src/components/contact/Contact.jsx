@@ -45,7 +45,7 @@ export default function Contact({ isDarkModeActive }) {
         }
     }
 
-    const thankYou = () => {
+    function thankYou () {
         alert('Thank you for your message. I will reach out as soon as possible!')
     }
 

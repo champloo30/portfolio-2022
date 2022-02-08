@@ -17,16 +17,16 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
       document.getElementById('line3').style.backgroundColor = 'var(--gunmetal)';
     } else if (isDarkModeActive === true) {
       document.querySelector('.navbar-dark').style.backgroundColor = '';
-      document.querySelector('.logo').style.color = '';
-      document.getElementById('line1').style.backgroundColor = '';
-      document.getElementById('line2').style.backgroundColor = '';
-      document.getElementById('line3').style.backgroundColor = '';
+      document.querySelector('.logo').style.color = null;
+      document.getElementById('line1').style.backgroundColor = null;
+      document.getElementById('line2').style.backgroundColor = null;
+      document.getElementById('line3').style.backgroundColor = null;
     } else if (isDarkModeActive === false) {
-      document.querySelector('.navbar').style.backgroundColor = '';
-      document.querySelector('.logo').style.color = '';
-      document.getElementById('line1').style.backgroundColor = '';
-      document.getElementById('line2').style.backgroundColor = '';
-      document.getElementById('line3').style.backgroundColor = '';
+      document.querySelector('.navbar').style.backgroundColor = null;
+      document.querySelector('.logo').style.color = null;
+      document.getElementById('line1').style.backgroundColor = null;
+      document.getElementById('line2').style.backgroundColor = null;
+      document.getElementById('line3').style.backgroundColor = null;
     }
     return
   };
@@ -47,11 +47,6 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
           <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>DJLD</a>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
-            <span id="line1"></span>
-            <span id="line2"></span>
-            <span id="line3"></span>
-          </div>
           <div className={isDarkModeActive ? "toggle-dark": "toggle-light"}>
             <h4 className="light-mode" onClick={() => switchModes("light")}>
               Light
@@ -59,6 +54,11 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
             <h4 className="dark-mode" onClick={() => switchModes("dark")}>
               Dark
             </h4>
+          </div>
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
           </div>
         </div>
       </div>

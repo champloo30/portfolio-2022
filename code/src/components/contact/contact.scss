@@ -8,11 +8,24 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+        height: 75vh;
+    }
+
+    @include tablet {
+        height: 60vh;
+    }
+
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         color: $bone;
         font-weight: 300;
         margin-top: -3rem;
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: -1rem;
+        }
     }
 
     h3 {
@@ -21,6 +34,10 @@
         font-size: 1.75rem;
         font-family: $display;
         margin-top: -1rem;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 
     .form {
@@ -52,6 +69,10 @@
                 font-family: $display;
                 font-size: 1.25rem;
 
+                @include mobile {
+                    width: 20rem;
+                }
+
                 &::placeholder {
                     color: $bone;
                 }
@@ -75,6 +96,10 @@
                 padding-top: 10px;
                 font-family: $display;
                 font-size: 1.25rem;
+
+                @include mobile {
+                    width: 20rem;
+                }
 
                 &::placeholder {
                     color: $bone;
@@ -119,11 +144,24 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+        height: 75vh;
+    }
+
+    @include tablet {
+        height: 60vh;
+    }
+
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         color: $bone;
         font-weight: 300;
         margin-top: -3rem;
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: -1rem;
+        }
     }
 
     h3 {
@@ -132,6 +170,10 @@
         font-size: 1.75rem;
         font-family: $display;
         margin-top: -1rem;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 
     .form {
@@ -163,6 +205,10 @@
                 font-family: $display;
                 font-size: 1.25rem;
 
+                @include mobile {
+                    width: 20rem;
+                }
+
                 &::placeholder {
                     color: $bone;
                 }
@@ -186,6 +232,10 @@
                 padding-top: 10px;
                 font-family: $display;
                 font-size: 1.25rem;
+
+                @include mobile {
+                    width: 20rem;
+                }
 
                 &::placeholder {
                     color: $bone;

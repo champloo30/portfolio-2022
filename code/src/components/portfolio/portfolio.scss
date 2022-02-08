@@ -8,12 +8,21 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include tablet {
+        height: 80vh;
+    }
+
     h1 {
         font-size: 5rem;
         font-family: $display;
         font-weight: 300;
         color: $teal;
         margin-top: 1.5rem;
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
     }
 
     .item-container {
@@ -24,45 +33,80 @@
         align-items: flex-start;
         justify-content: space-evenly;
 
+        @include mobile {
+            height: 80vh;
+        }
+
         .item {
             width: 100%;
             display: flex;
             align-items: center;
 
+            @include mobile {
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-bottom: 1rem;
+            }
+
             .website-box {
-                flex: 2.5;
-                height: 7.5rem;
-                width: 5rem;
-                background-color: $gunmetal;
-                border-radius: 10px;
-                cursor: pointer;
+                flex: 3;
 
                 .portfolio-img {
-                    height: 100%;
-                    width: 100%;
+                    height: 8rem;
+                    width: 14rem;
                     border-radius: 10px;
+                    border: 1px solid $teal;
+                    background-color: $gunmetal;
+                    cursor: pointer;
+
+                    @include tablet {
+                        height: 10rem;
+                        width: 18rem;
+                    }
                 }
             }
 
             .text-box {
-                flex: 9.5;
+                flex: 9;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-evenly;
                 margin-left: 2rem;
 
+                @include mobile {
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 0;
+                }
+
                 h2 {
                     color: $salmon;
                     font-family: $display;
                     font-weight: 400;
                     font-size: 2.25rem;
+
+                    @include mobile {
+                        font-size: 1.75rem;
+                    }
+
+                    @include tablet {
+                        font-size: 2rem;
+                    }
                 }
 
                 p {
                     color: $purpleNavy;
                     font-weight: 300;
                     font-size: 1.25rem;
+
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+
+                    @include tablet {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -77,12 +121,21 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include tablet {
+        height: 80vh;
+    }
+
     h1 {
         font-size: 5rem;
         font-family: $display;
         font-weight: 300;
         color: $eton;
         margin-top: 1.5rem;
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
     }
 
     .item-container {
@@ -93,45 +146,80 @@
         align-items: flex-start;
         justify-content: space-evenly;
 
+        @include mobile {
+            height: 80vh;
+        }
+
         .item {
             width: 100%;
             display: flex;
             align-items: center;
 
+            @include mobile {
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-bottom: 1rem;
+            }
+
             .website-box {
-                flex: 2.5;
-                height: 7.5rem;
-                width: 5rem;
-                background-color: $charcoal;
-                border-radius: 10px;
-                cursor: pointer;
+                flex: 3;
 
                 .portfolio-img {
-                    height: 100%;
-                    width: 100%;
+                    height: 8rem;
+                    width: 14rem;
                     border-radius: 10px;
+                    border: 1px solid $eton;
+                    background-color: $charcoal;
+                    cursor: pointer;
+
+                    @include tablet {
+                        height: 10rem;
+                        width: 18rem;
+                    }
                 }
             }
 
             .text-box {
-                flex: 9.5;
+                flex: 9;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-evenly;
                 margin-left: 2rem;
 
+                @include mobile {
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 0;
+                }
+
                 h2 {
                     color: $rosy;
                     font-family: $display;
                     font-weight: 400;
                     font-size: 2.25rem;
+
+                    @include mobile {
+                        font-size: 1.75rem;
+                    }
+
+                    @include tablet {
+                        font-size: 2rem;
+                    }
                 }
 
                 p {
                     color: $bone;
                     font-weight: 300;
                     font-size: 1.25rem;
+                    
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+
+                    @include tablet {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

@@ -8,6 +8,10 @@
     align-items: flex-start;
     justify-content: center;
 
+    @include mobile {
+        height: 100vh;
+    }
+
     .text-box{
         height: 60vh;
         color: $purpleNavy;
@@ -15,10 +19,18 @@
         flex-direction: column;
         justify-content: space-evenly;
         margin-left: 2rem;
+        
+        @include mobile {
+            margin-left: 0.5rem;
+        }
 
         h2{
             font-size: 4rem;
             font-weight: 300;
+
+            @include mobile {
+                font-size: 2.5rem;
+            }
         }
     
         h1{
@@ -27,6 +39,10 @@
             font-weight: 400;
             color: $salmon;
             margin-top: -1rem;
+
+            @include mobile {
+                font-size: 4rem;
+            }
         }
     
         .bottom-text-home{
@@ -37,16 +53,24 @@
                 font-weight: 300;
                 font-family: $display;
 
+                @include mobile {
+                    font-size: 2rem;
+                }
+
                 span{
                     font-weight: 300;
                     font-family: $source;
                     color: $teal;
                     margin-left: 1rem;
+
+                    @include mobile {
+                        margin-left: 0.5rem;
+                    }
                 }
             }
 
             .ityped-cursor{
-                margin-left: -1rem;
+                margin-left: -0.5rem;
                 animation: blink 1s infinite;
             }
     
@@ -69,6 +93,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    
+    @include mobile {
+        height: 100vh;
+    }
 
     .text-box{
         height: 60vh;
@@ -78,9 +106,17 @@
         justify-content: space-evenly;
         margin-left: 2rem;
 
+        @include mobile {
+            margin-left: 0.5rem;
+        }
+
         h2{
             font-size: 4rem;
             font-weight: 300;
+
+            @include mobile {
+                font-size: 2.5rem;
+            }
         }
     
         h1{
@@ -89,6 +125,10 @@
             font-weight: 400;
             color: $rosy;
             margin-top: -1rem;
+
+            @include mobile {
+                font-size: 4rem;
+            }
         }
     
         .bottom-text-home{
@@ -99,17 +139,29 @@
                 font-weight: 300;
                 font-family: $display;
 
+                @include mobile {
+                    font-size: 2rem;
+                }
+
                 span{
                     font-weight: 300;
                     font-family: $source;
                     color: $eton;
                     margin-left: 1rem;
+
+                    @include mobile {
+                        margin-left: 0.5rem;
+                    }
                 }
             }
 
             .ityped-cursor{
                 margin-left: -1rem;
                 animation: blink 1s infinite;
+
+                @include mobile {
+                    margin-left: -0.5rem;
+                }
             }
     
             @keyframes blink {
