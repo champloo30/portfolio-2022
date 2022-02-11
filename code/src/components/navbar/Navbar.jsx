@@ -44,7 +44,7 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
     <div className={isDarkModeActive ? "navbar-dark " + (menuOpen && "active-dark") : "navbar " + (menuOpen && "active")} onScroll={changeNavbarColor} >
       <div className="container">
         <div className="left">
-          <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>DJLD</a>
+          <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>DJLDev</a>
         </div>
         <div className="right">
           <div className={isDarkModeActive ? "toggle-dark": "toggle-light"}>
