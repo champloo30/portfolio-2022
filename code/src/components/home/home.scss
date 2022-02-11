@@ -116,6 +116,10 @@
             margin-left: 0.5rem;
         }
 
+        @include tablet {
+            height: 40vh;
+        }
+
         h2{
             font-size: 4rem;
             font-weight: 300;
