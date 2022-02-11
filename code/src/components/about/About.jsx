@@ -9,7 +9,8 @@ import css from "../../assets/icons8-css3.svg";
 import javascript from "../../assets/icons8-javascript.svg";
 import react from "../../assets/icons8-react-native.svg";
 import sass from "../../assets/icons8-sass.svg";
-import pdf from "../../assets/Dalyn_J.L._Dunn_Resume.pdf";
+import pdf from "../../assets/DJLD-Resume.pdf";
+import blender from "../../assets/icons8-blender-3d.svg"
 
 export default function About({ isDarkModeActive }) {
   return (
@@ -26,7 +27,7 @@ export default function About({ isDarkModeActive }) {
       </div>
       <div className="part-two">
         <h1>"Hello World"</h1>
-        <p>Hello and welcome! My name is Dalyn and I'm a self-taught Front-End Software Developer and UX/UI Designer. I am currently working as a freelance developer and designer for websites and business brandings.</p>
+        <p>Hello and welcome! My name is Dalyn and I'm a self-taught Front-End Web Developer, UX/UI Designer and 3D Artist. I'm currently working as a freelance developer and designer for websites and business brandings.</p>
         <h2>Skills</h2>
         <div className="pt-icons">
           <img src={html} alt="HTML Icon" className="icon" />
@@ -34,6 +35,7 @@ export default function About({ isDarkModeActive }) {
           <img src={javascript} alt="JavaScript Icon" className="icon" />
           <img src={react} alt="React Icon" className="icon" />
           <img src={sass} alt="Sass Icon" className="icon" />
+          <img src={blender} alt="Blender Icon" className="icon" />
         </div>
       </div>
     </div>

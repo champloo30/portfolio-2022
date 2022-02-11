@@ -11,7 +11,7 @@ export default function Portfolio({ isDarkModeActive }) {
           </div>
           <div className="text-box">
             <h2>Peace Kingdom Ministries of Ohio</h2>
-            <p>Website built with React, JavaScript, and Sass.</p>
+            <p>Website built for a church using the stack of React, JavaScript, and Sass.</p>
           </div>
         </div>
         <div className="item">

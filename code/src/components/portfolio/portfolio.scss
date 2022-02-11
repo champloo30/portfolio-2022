@@ -12,6 +12,10 @@
         height: 80vh;
     }
 
+    @include mobile {
+        height: 100vh;
+    }
+
     h1 {
         font-size: 5rem;
         font-family: $display;
@@ -34,7 +38,11 @@
         justify-content: space-evenly;
 
         @include mobile {
-            height: 80vh;
+            height: 90vh;
+        }
+
+        @include tablet {
+            width: 80%;
         }
 
         .item {
@@ -125,6 +133,10 @@
         height: 80vh;
     }
 
+    @include mobile {
+        height: 100vh;
+    }
+
     h1 {
         font-size: 5rem;
         font-family: $display;
@@ -147,7 +159,11 @@
         justify-content: space-evenly;
 
         @include mobile {
-            height: 80vh;
+            height: 90vh;
+        }
+
+        @include tablet {
+            width: 80%;
         }
 
         .item {
