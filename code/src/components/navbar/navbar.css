@@ -14,10 +14,12 @@
   justify-content: space-between;
 }
 .navbar .container .left .logo {
+  text-decoration: none;
+}
+.navbar .container .left .logo .logo-text {
   font-size: 40px;
   font-weight: 500;
   font-family: freight-display-pro, serif;
-  text-decoration: none;
   color: #232C33;
 }
 .navbar .container .right {
@@ -103,10 +105,12 @@
   justify-content: space-between;
 }
 .navbar-dark .container .left .logo {
+  text-decoration: none;
+}
+.navbar-dark .container .left .logo .logo-text {
   font-size: 40px;
   font-weight: 500;
   font-family: freight-display-pro, serif;
-  text-decoration: none;
   color: #F9F6EE;
 }
 .navbar-dark .container .right {

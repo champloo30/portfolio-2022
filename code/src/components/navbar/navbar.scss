@@ -18,11 +18,14 @@
         .left {
     
             .logo {
-                font-size: 40px;
-                font-weight: 500;
-                font-family: $display;
                 text-decoration: none;
-                color: $gunmetal;
+
+                .logo-text {
+                    font-size: 40px;
+                    font-weight: 500;
+                    font-family: $display;
+                    color: $gunmetal;
+                }
             }
         } 
         .right {
@@ -137,11 +140,14 @@
         .left {
     
             .logo {
-                font-size: 40px;
-                font-weight: 500;
-                font-family: $display;
                 text-decoration: none;
-                color: $bone;
+
+                .logo-text {
+                    font-size: 40px;
+                    font-weight: 500;
+                    font-family: $display;
+                    color: $bone;
+                }
             }
         } 
         .right {

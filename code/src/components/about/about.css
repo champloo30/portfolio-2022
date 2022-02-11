@@ -143,8 +143,8 @@
 }
 @media (max-width: 425px) {
   .about .part-two .icon {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin-top: 0;
   }
 }
@@ -294,8 +294,8 @@
 }
 @media (max-width: 425px) {
   .about-dark .part-two .icon {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin-top: 0;
   }
 }

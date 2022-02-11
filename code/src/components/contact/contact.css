@@ -8,7 +8,7 @@
 }
 @media (max-width: 425px) {
   .contact {
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {
@@ -137,7 +137,7 @@
 }
 @media (max-width: 425px) {
   .contact-dark {
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {

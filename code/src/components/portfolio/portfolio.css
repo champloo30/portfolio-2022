@@ -11,6 +11,11 @@
     height: 80vh;
   }
 }
+@media (max-width: 425px) {
+  .portfolio {
+    height: 100vh;
+  }
+}
 .portfolio h1 {
   font-size: 5rem;
   font-family: freight-display-pro, serif;
@@ -34,7 +39,12 @@
 }
 @media (max-width: 425px) {
   .portfolio .item-container {
-    height: 80vh;
+    height: 90vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .portfolio .item-container {
+    width: 80%;
   }
 }
 .portfolio .item-container .item {
@@ -58,7 +68,6 @@
   border-radius: 10px;
   border: 1px solid #107E7D;
   background-color: #232C33;
-  cursor: pointer;
 }
 @media (min-width: 425px) and (max-width: 1000px) {
   .portfolio .item-container .item .website-box .portfolio-img {
@@ -112,6 +121,50 @@
     font-size: 1rem;
   }
 }
+.portfolio .item-container .item .text-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .item-container .item .text-box .buttons .button-link {
+  text-decoration: none;
+}
+.portfolio .item-container .item .text-box .buttons .button-link .link-button {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #107E7D;
+  color: #107E7D;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.portfolio .item-container .item .text-box .buttons .button-link .link-button h3 {
+  font-size: 1rem;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+.portfolio .item-container .item .text-box .buttons .button-link .link-button:hover {
+  background-color: #107E7D;
+  color: #F9F6EE;
+}
+.portfolio .item-container .item .text-box .buttons .link-button {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #107E7D;
+  color: #107E7D;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.portfolio .item-container .item .text-box .buttons .link-button h3 {
+  font-size: 1rem;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+.portfolio .item-container .item .text-box .buttons .link-button:hover {
+  background-color: #107E7D;
+  color: #F9F6EE;
+}
 
 .portfolio-dark {
   height: 100vh;
@@ -124,6 +177,11 @@
 @media (min-width: 425px) and (max-width: 1000px) {
   .portfolio-dark {
     height: 80vh;
+  }
+}
+@media (max-width: 425px) {
+  .portfolio-dark {
+    height: 100vh;
   }
 }
 .portfolio-dark h1 {
@@ -149,7 +207,12 @@
 }
 @media (max-width: 425px) {
   .portfolio-dark .item-container {
-    height: 80vh;
+    height: 90vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .portfolio-dark .item-container {
+    width: 80%;
   }
 }
 .portfolio-dark .item-container .item {
@@ -227,6 +290,50 @@
   .portfolio-dark .item-container .item .text-box p {
     font-size: 1rem;
   }
+}
+.portfolio-dark .item-container .item .text-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-dark .item-container .item .text-box .buttons .button-link {
+  text-decoration: none;
+}
+.portfolio-dark .item-container .item .text-box .buttons .button-link .link-button {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #A1CCA5;
+  color: #A1CCA5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.portfolio-dark .item-container .item .text-box .buttons .button-link .link-button h3 {
+  font-size: 1rem;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+.portfolio-dark .item-container .item .text-box .buttons .button-link .link-button:hover {
+  background-color: #A1CCA5;
+  color: #232C33;
+}
+.portfolio-dark .item-container .item .text-box .buttons .link-button {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #A1CCA5;
+  color: #A1CCA5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.portfolio-dark .item-container .item .text-box .buttons .link-button h3 {
+  font-size: 1rem;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+.portfolio-dark .item-container .item .text-box .buttons .link-button:hover {
+  background-color: #A1CCA5;
+  color: #232C33;
 }
 
 /*# sourceMappingURL=portfolio.css.map */

@@ -65,7 +65,6 @@
                     border-radius: 10px;
                     border: 1px solid $teal;
                     background-color: $gunmetal;
-                    cursor: pointer;
 
                     @include tablet {
                         height: 10rem;
@@ -114,6 +113,58 @@
 
                     @include tablet {
                         font-size: 1rem;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .button-link {
+                        text-decoration: none;
+
+                        .link-button {
+                            margin-right: 1rem;
+                            margin-top: 0.5rem;
+                            border: 2px solid $teal;
+                            color: $teal;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+    
+                            h3 {
+                                font-size: 1rem;
+                                padding: 0 1rem;
+                                font-weight: 400;
+                            }
+    
+                            &:hover {
+                                background-color: $teal;
+                                color: $bone;
+                            }
+                        }
+                    }
+
+                    .link-button {
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                        border: 2px solid $teal;
+                        color: $teal;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+
+                        h3 {
+                            font-size: 1rem;
+                            padding: 0 1rem;
+                            font-weight: 400;
+                        }
+
+                        &:hover {
+                            background-color: $teal;
+                            color: $bone;
+                        }
                     }
                 }
             }
@@ -236,6 +287,58 @@
 
                     @include tablet {
                         font-size: 1rem;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .button-link {
+                        text-decoration: none;
+
+                        .link-button {
+                            margin-right: 1rem;
+                            margin-top: 0.5rem;
+                            border: 2px solid $eton;
+                            color: $eton;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+    
+                            h3 {
+                                font-size: 1rem;
+                                padding: 0 1rem;
+                                font-weight: 400;
+                            }
+    
+                            &:hover {
+                                background-color: $eton;
+                                color: $gunmetal;
+                            }
+                        }
+                    }
+
+                    .link-button {
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                        border: 2px solid $eton;
+                        color: $eton;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+
+                        h3 {
+                            font-size: 1rem;
+                            padding: 0 1rem;
+                            font-weight: 400;
+                        }
+
+                        &:hover {
+                            background-color: $eton;
+                            color: $gunmetal;
+                        }
                     }
                 }
             }

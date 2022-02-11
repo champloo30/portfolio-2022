@@ -21,7 +21,13 @@
 }
 @media (max-width: 425px) {
   .home .text-box {
+    height: 40vh;
     margin-left: 0.5rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .home .text-box {
+    height: 40vh;
   }
 }
 .home .text-box h2 {
@@ -42,7 +48,7 @@
 }
 @media (max-width: 425px) {
   .home .text-box h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .home .text-box .bottom-text-home {
@@ -105,7 +111,13 @@
 }
 @media (max-width: 425px) {
   .home-dark .text-box {
+    height: 40vh;
     margin-left: 0.5rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .home-dark .text-box {
+    height: 40vh;
   }
 }
 .home-dark .text-box h2 {
@@ -126,7 +138,7 @@
 }
 @media (max-width: 425px) {
   .home-dark .text-box h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .home-dark .text-box .bottom-text-home {
