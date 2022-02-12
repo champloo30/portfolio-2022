@@ -57,7 +57,7 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
               Dark
             </h4>
           </div>
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)} tabIndex="0" role="menu">
             <span id="line1"></span>
             <span id="line2"></span>
             <span id="line3"></span>

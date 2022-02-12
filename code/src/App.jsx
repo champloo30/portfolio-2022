@@ -17,9 +17,12 @@ function App() {
 
   return (
     <div className="app">
+      <a class="skip-to-content-link" href="#main-content">
+        Skip to content
+      </a>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkModeActive={isDarkModeActive} setIsDarkModeActive={setIsDarkModeActive} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkModeActive={isDarkModeActive} />
-      <div className="section">
+      <div id="main-content" className="section">
         <Home isDarkModeActive={isDarkModeActive} />
         <About isDarkModeActive={isDarkModeActive} />
         <Work isDarkModeActive={isDarkModeActive} />

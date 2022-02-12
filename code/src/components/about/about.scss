@@ -7,7 +7,7 @@
     align-items: center;
 
     @include mobile {
-        height: 110vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,7 +34,7 @@
             @include mobile {
                 width: 20rem;
                 height: 20rem;
-                margin-top: 0;
+                margin-top: 4rem;
             }
         }
 
@@ -96,16 +96,19 @@
         align-items: center;
         justify-content: space-evenly;
         margin-top: 5rem;
+        margin-left: -4rem;
 
         @include mobile {
             height: 15rem;
             width: 90%;
             margin-top: 0;
+            margin-left: 0;
         }
 
         @include tablet {
             height: 40rem;
             margin-top: 0;
+            margin-left: 0;
         }
 
         h1 {
@@ -162,7 +165,7 @@
     align-items: center;
 
     @include mobile {
-        height: 110vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -189,7 +192,7 @@
             @include mobile {
                 width: 20rem;
                 height: 20rem;
-                margin-top: 0;
+                margin-top: 4rem;
             }
         }
 
@@ -251,16 +254,19 @@
         align-items: center;
         justify-content: space-evenly;
         margin-top: 5rem;
+        margin-left: -4rem;
 
         @include mobile {
             height: 15rem;
             width: 90%;
             margin-top: 0;
+            margin-left: 0;
         }
 
         @include tablet {
             height: 40rem;
             margin-top: 0;
+            margin-left: 0;
         }
 
         h1 {

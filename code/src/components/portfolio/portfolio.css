@@ -1,5 +1,5 @@
 .portfolio {
-  height: 100vh;
+  height: 110vh;
   background-color: #F9F6EE;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 }
 @media (max-width: 425px) {
   .portfolio {
-    height: 100vh;
+    height: 135vh;
   }
 }
 .portfolio h1 {
@@ -21,16 +21,16 @@
   font-family: freight-display-pro, serif;
   font-weight: 300;
   color: #107E7D;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 @media (max-width: 425px) {
   .portfolio h1 {
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 }
 .portfolio .item-container {
-  height: 65vh;
+  height: 80vh;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 }
 @media (max-width: 425px) {
   .portfolio .item-container {
-    height: 90vh;
+    height: 125vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {
@@ -94,7 +94,7 @@
   color: #F38375;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 @media (max-width: 425px) {
   .portfolio .item-container .item .text-box h2 {
@@ -109,7 +109,7 @@
 .portfolio .item-container .item .text-box p {
   color: #585481;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 @media (max-width: 425px) {
   .portfolio .item-container .item .text-box p {
@@ -120,6 +120,23 @@
   .portfolio .item-container .item .text-box p {
     font-size: 1rem;
   }
+}
+.portfolio .item-container .item .text-box h3 {
+  font-size: 1.5rem;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  color: #F38375;
+}
+.portfolio .item-container .item .text-box .stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .item-container .item .text-box .stack h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #232C33;
+  margin-right: 1rem;
 }
 .portfolio .item-container .item .text-box .buttons {
   display: flex;
@@ -138,7 +155,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.portfolio .item-container .item .text-box .buttons .button-link .link-button h3 {
+.portfolio .item-container .item .text-box .buttons .button-link .link-button h5 {
   font-size: 1rem;
   padding: 0 1rem;
   font-weight: 400;
@@ -156,7 +173,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.portfolio .item-container .item .text-box .buttons .link-button h3 {
+.portfolio .item-container .item .text-box .buttons .link-button h5 {
   font-size: 1rem;
   padding: 0 1rem;
   font-weight: 400;
@@ -165,9 +182,12 @@
   background-color: #107E7D;
   color: #F9F6EE;
 }
+.portfolio hr {
+  width: 100%;
+}
 
 .portfolio-dark {
-  height: 100vh;
+  height: 110vh;
   background-color: #232C33;
   display: flex;
   flex-direction: column;
@@ -181,7 +201,7 @@
 }
 @media (max-width: 425px) {
   .portfolio-dark {
-    height: 100vh;
+    height: 135vh;
   }
 }
 .portfolio-dark h1 {
@@ -189,16 +209,16 @@
   font-family: freight-display-pro, serif;
   font-weight: 300;
   color: #A1CCA5;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 @media (max-width: 425px) {
   .portfolio-dark h1 {
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 }
 .portfolio-dark .item-container {
-  height: 65vh;
+  height: 80vh;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -207,7 +227,7 @@
 }
 @media (max-width: 425px) {
   .portfolio-dark .item-container {
-    height: 90vh;
+    height: 125vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {
@@ -264,7 +284,7 @@
   color: #B79492;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 @media (max-width: 425px) {
   .portfolio-dark .item-container .item .text-box h2 {
@@ -279,7 +299,7 @@
 .portfolio-dark .item-container .item .text-box p {
   color: #F9F6EE;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 @media (max-width: 425px) {
   .portfolio-dark .item-container .item .text-box p {
@@ -290,6 +310,23 @@
   .portfolio-dark .item-container .item .text-box p {
     font-size: 1rem;
   }
+}
+.portfolio-dark .item-container .item .text-box h3 {
+  font-size: 1.5rem;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  color: #B79492;
+}
+.portfolio-dark .item-container .item .text-box .stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-dark .item-container .item .text-box .stack h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #F9F6EE;
+  margin-right: 1rem;
 }
 .portfolio-dark .item-container .item .text-box .buttons {
   display: flex;
@@ -308,7 +345,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.portfolio-dark .item-container .item .text-box .buttons .button-link .link-button h3 {
+.portfolio-dark .item-container .item .text-box .buttons .button-link .link-button h5 {
   font-size: 1rem;
   padding: 0 1rem;
   font-weight: 400;
@@ -326,7 +363,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.portfolio-dark .item-container .item .text-box .buttons .link-button h3 {
+.portfolio-dark .item-container .item .text-box .buttons .link-button h5 {
   font-size: 1rem;
   padding: 0 1rem;
   font-weight: 400;
@@ -334,6 +371,9 @@
 .portfolio-dark .item-container .item .text-box .buttons .link-button:hover {
   background-color: #A1CCA5;
   color: #232C33;
+}
+.portfolio-dark hr {
+  width: 100%;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
