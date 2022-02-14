@@ -18,7 +18,8 @@ $display: freight-display-pro, serif;
 
 //media queries
 $mobile-width: 425px;
-$max-tablet-width-x: 1000px;
+$tablet-sm-width: 768px;
+$tablet-lg-width: 1000px;
 
 @mixin mobile {
     @media (max-width: #{$mobile-width}) {
@@ -26,8 +27,14 @@ $max-tablet-width-x: 1000px;
     }
 }
 
-@mixin tablet {
-    @media (min-width: #{$mobile-width}) and (max-width: #{$max-tablet-width-x}) {
+@mixin tablet-sm {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-sm-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-lg {
+    @media (min-width: #{$tablet-sm-width + 1}) and (max-width: #{$tablet-lg-width}) {
         @content;
     }
 }

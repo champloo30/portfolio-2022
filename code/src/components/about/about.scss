@@ -14,7 +14,13 @@
         justify-content: space-evenly;
     }
 
-    @include tablet {
+    @include tablet-sm {
+        height: 110vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    @include tablet-lg {
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -63,7 +69,7 @@
                     width: 2.5rem;
                 }
 
-                @media (min-width: 1000px) {
+                @media (min-width: 1001px) {
 
                     &:hover{
                         animation: moveUp 1s ease;
@@ -104,7 +110,13 @@
             margin-left: 0;
         }
 
-        @include tablet {
+        @include tablet-sm {
+            height: 45rem;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        @include tablet-lg {
             height: 40rem;
             margin-top: 0;
             margin-left: 0;
@@ -171,7 +183,13 @@
         justify-content: space-evenly;
     }
 
-    @include tablet {
+    @include tablet-sm {
+        height: 110vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    @include tablet-lg {
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -261,7 +279,13 @@
             margin-left: 0;
         }
 
-        @include tablet {
+        @include tablet-sm {
+            height: 45rem;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        @include tablet-lg {
             height: 40rem;
             margin-top: 0;
             margin-left: 0;

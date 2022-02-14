@@ -12,7 +12,11 @@
         height: 80vh;
     }
 
-    @include tablet {
+    @include tablet-sm {
+        height: 65vh;
+    }
+
+    @include tablet-lg {
         height: 60vh;
     }
 
@@ -148,7 +152,11 @@
         height: 80vh;
     }
 
-    @include tablet {
+    @include tablet-sm {
+        height: 65vh;
+    }
+
+    @include tablet-lg {
         height: 60vh;
     }
 

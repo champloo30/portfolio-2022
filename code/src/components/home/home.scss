@@ -25,7 +25,11 @@
             margin-left: 0.5rem;
         }
 
-        @include tablet {
+        @include tablet-sm {
+            height: 40vh;
+        }
+
+        @include tablet-lg {
             height: 40vh;
         }
 
@@ -116,7 +120,11 @@
             margin-left: 0.5rem;
         }
 
-        @include tablet {
+        @include tablet-sm {
+            height: 40vh;
+        }
+
+        @include tablet-lg {
             height: 40vh;
         }
 

@@ -8,7 +8,11 @@
     align-items: center;
     justify-content: space-evenly;
 
-    @include tablet {
+    @include tablet-sm {
+        height: 80vh;
+    }
+
+    @include tablet-lg {
         height: 80vh;
     }
 
@@ -40,8 +44,12 @@
             height: 135vh;
         }
 
-        @include tablet {
-            width: 80%;
+        @include tablet-sm {
+            width: 90%;
+        }
+
+        @include tablet-lg {
+            width: 90%;
         }
 
         .item {
@@ -66,7 +74,7 @@
                     border: 1px solid $teal;
                     background-color: $gunmetal;
 
-                    @include tablet {
+                    @include tablet-lg {
                         height: 10rem;
                         width: 18rem;
                     }
@@ -97,7 +105,7 @@
                         font-size: 1.75rem;
                     }
 
-                    @include tablet {
+                    @include tablet-lg {
                         font-size: 2rem;
                     }
                 }
@@ -111,7 +119,7 @@
                         font-size: 1rem;
                     }
 
-                    @include tablet {
+                    @include tablet-lg {
                         font-size: 1rem;
                     }
                 }
@@ -204,7 +212,11 @@
     align-items: center;
     justify-content: space-evenly;
 
-    @include tablet {
+    @include tablet-sm {
+        height: 80vh;
+    }
+
+    @include tablet-lg {
         height: 80vh;
     }
 
@@ -236,7 +248,11 @@
             height: 135vh;
         }
 
-        @include tablet {
+        @include tablet-sm {
+            width: 90%;
+        }
+
+        @include tablet-lg {
             width: 80%;
         }
 
@@ -263,7 +279,7 @@
                     background-color: $charcoal;
                     cursor: pointer;
 
-                    @include tablet {
+                    @include tablet-lg {
                         height: 10rem;
                         width: 18rem;
                     }
@@ -294,7 +310,7 @@
                         font-size: 1.75rem;
                     }
 
-                    @include tablet {
+                    @include tablet-lg {
                         font-size: 2rem;
                     }
                 }
@@ -308,7 +324,7 @@
                         font-size: 1rem;
                     }
 
-                    @include tablet {
+                    @include tablet-lg {
                         font-size: 1rem;
                     }
                 }

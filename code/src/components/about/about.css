@@ -13,7 +13,14 @@
     justify-content: space-evenly;
   }
 }
-@media (min-width: 425px) and (max-width: 1000px) {
+@media (min-width: 425px) and (max-width: 768px) {
+  .about {
+    height: 110vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
   .about {
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,7 +71,7 @@
     width: 2.5rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .about .part-one .po-icons .icon:hover {
     animation: moveUp 1s ease;
   }
@@ -98,7 +105,14 @@
     margin-left: 0;
   }
 }
-@media (min-width: 425px) and (max-width: 1000px) {
+@media (min-width: 425px) and (max-width: 768px) {
+  .about .part-two {
+    height: 45rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
   .about .part-two {
     height: 40rem;
     margin-top: 0;
@@ -166,7 +180,14 @@
     justify-content: space-evenly;
   }
 }
-@media (min-width: 425px) and (max-width: 1000px) {
+@media (min-width: 425px) and (max-width: 768px) {
+  .about-dark {
+    height: 110vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
   .about-dark {
     flex-direction: column;
     justify-content: space-evenly;
@@ -251,7 +272,14 @@
     margin-left: 0;
   }
 }
-@media (min-width: 425px) and (max-width: 1000px) {
+@media (min-width: 425px) and (max-width: 768px) {
+  .about-dark .part-two {
+    height: 45rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
   .about-dark .part-two {
     height: 40rem;
     margin-top: 0;
