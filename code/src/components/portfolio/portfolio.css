@@ -13,7 +13,7 @@
 }
 @media (max-width: 425px) {
   .portfolio {
-    height: 135vh;
+    height: 140vh;
   }
 }
 .portfolio h1 {
@@ -26,7 +26,6 @@
 @media (max-width: 425px) {
   .portfolio h1 {
     font-size: 4rem;
-    margin-top: 3.5rem;
   }
 }
 .portfolio .item-container {
@@ -39,7 +38,7 @@
 }
 @media (max-width: 425px) {
   .portfolio .item-container {
-    height: 125vh;
+    height: 135vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {
@@ -57,6 +56,7 @@
   .portfolio .item-container .item {
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 0;
   }
 }
 .portfolio .item-container .item .website-box {
@@ -201,7 +201,7 @@
 }
 @media (max-width: 425px) {
   .portfolio-dark {
-    height: 135vh;
+    height: 140vh;
   }
 }
 .portfolio-dark h1 {
@@ -214,7 +214,6 @@
 @media (max-width: 425px) {
   .portfolio-dark h1 {
     font-size: 4rem;
-    margin-top: 3.5rem;
   }
 }
 .portfolio-dark .item-container {
@@ -227,7 +226,7 @@
 }
 @media (max-width: 425px) {
   .portfolio-dark .item-container {
-    height: 125vh;
+    height: 135vh;
   }
 }
 @media (min-width: 425px) and (max-width: 1000px) {
@@ -245,7 +244,7 @@
   .portfolio-dark .item-container .item {
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 }
 .portfolio-dark .item-container .item .website-box {

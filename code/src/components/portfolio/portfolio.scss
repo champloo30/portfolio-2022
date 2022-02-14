@@ -13,7 +13,7 @@
     }
 
     @include mobile {
-        height: 135vh;
+        height: 140vh;
     }
 
     h1 {
@@ -25,7 +25,6 @@
 
         @include mobile {
             font-size: 4rem;
-            margin-top: 3.5rem;
         }
     }
 
@@ -38,7 +37,7 @@
         justify-content: space-evenly;
 
         @include mobile {
-            height: 125vh;
+            height: 135vh;
         }
 
         @include tablet {
@@ -54,6 +53,7 @@
             @include mobile {
                 flex-direction: column;
                 justify-content: space-evenly;
+                margin-bottom: 0;
             }
 
             .website-box {
@@ -209,7 +209,7 @@
     }
 
     @include mobile {
-        height: 135vh;
+        height: 140vh;
     }
 
     h1 {
@@ -221,7 +221,6 @@
 
         @include mobile {
             font-size: 4rem;
-            margin-top: 3.5rem;
         }
     }
 
@@ -234,7 +233,7 @@
         justify-content: space-evenly;
 
         @include mobile {
-            height: 125vh;
+            height: 135vh;
         }
 
         @include tablet {
@@ -250,7 +249,7 @@
             @include mobile {
                 flex-direction: column;
                 justify-content: space-evenly;
-                margin-bottom: 1rem;
+                margin-bottom: 0;
             }
 
             .website-box {
