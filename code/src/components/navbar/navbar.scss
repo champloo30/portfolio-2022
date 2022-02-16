@@ -19,12 +19,22 @@
     
             .logo {
                 text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                .br-bubble {
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 36% 64% 22% 78% / 47% 54% 46% 53%;
+                    background: linear-gradient(130deg, $teal 20%, $salmon);
+                }
 
                 .logo-text {
                     font-size: 40px;
                     font-weight: 500;
                     font-family: $display;
                     color: $gunmetal;
+                    margin-left: -1rem;
                 }
             }
         } 
@@ -35,8 +45,11 @@
 
             .toggle-dark, .toggle-light {
                 display: flex;
-                padding: 3px;
                 border-radius: 1.5rem;
+
+                @include mobile {
+                    margin-right: -1.5rem;
+                }
             }
 
             .toggle-dark {
@@ -140,13 +153,22 @@
         .left {
     
             .logo {
-                text-decoration: none;
+                text-decoration: none;display: flex;
+                align-items: center;
+
+                .br-bubble {
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 36% 64% 22% 78% / 47% 54% 46% 53%;
+                    background: linear-gradient(130deg, $eton, $rosy);
+                }
 
                 .logo-text {
                     font-size: 40px;
                     font-weight: 500;
                     font-family: $display;
                     color: $bone;
+                    margin-left: -1rem;
                 }
             }
         } 
@@ -157,8 +179,11 @@
 
             .toggle-dark, .toggle-light {
                 display: flex;
-                padding: 3px;
                 border-radius: 1.5rem;
+
+                @include mobile {
+                    margin-right: -1.5rem;
+                }
             }
 
             .toggle-dark {

@@ -15,12 +15,21 @@
 }
 .navbar .container .left .logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.navbar .container .left .logo .br-bubble {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 36% 64% 22% 78%/47% 54% 46% 53%;
+  background: linear-gradient(130deg, #107E7D 20%, #F38375);
 }
 .navbar .container .left .logo .logo-text {
   font-size: 40px;
   font-weight: 500;
   font-family: freight-display-pro, serif;
   color: #232C33;
+  margin-left: -1rem;
 }
 .navbar .container .right {
   display: flex;
@@ -29,8 +38,12 @@
 }
 .navbar .container .right .toggle-dark, .navbar .container .right .toggle-light {
   display: flex;
-  padding: 3px;
   border-radius: 1.5rem;
+}
+@media (max-width: 425px) {
+  .navbar .container .right .toggle-dark, .navbar .container .right .toggle-light {
+    margin-right: -1.5rem;
+  }
 }
 .navbar .container .right .toggle-dark {
   background-color: #232C33;
@@ -106,12 +119,21 @@
 }
 .navbar-dark .container .left .logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.navbar-dark .container .left .logo .br-bubble {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 36% 64% 22% 78%/47% 54% 46% 53%;
+  background: linear-gradient(130deg, #A1CCA5, #B79492);
 }
 .navbar-dark .container .left .logo .logo-text {
   font-size: 40px;
   font-weight: 500;
   font-family: freight-display-pro, serif;
   color: #F9F6EE;
+  margin-left: -1rem;
 }
 .navbar-dark .container .right {
   display: flex;
@@ -120,8 +142,12 @@
 }
 .navbar-dark .container .right .toggle-dark, .navbar-dark .container .right .toggle-light {
   display: flex;
-  padding: 3px;
   border-radius: 1.5rem;
+}
+@media (max-width: 425px) {
+  .navbar-dark .container .right .toggle-dark, .navbar-dark .container .right .toggle-light {
+    margin-right: -1.5rem;
+  }
 }
 .navbar-dark .container .right .toggle-dark {
   background-color: #232C33;
