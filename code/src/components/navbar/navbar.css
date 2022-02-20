@@ -86,7 +86,7 @@
 .navbar.active {
   background-color: #232C33;
 }
-.navbar.active .left .logo {
+.navbar.active .left .logo .logo-text {
   color: #F9F6EE;
 }
 .navbar.active .right .hamburger span:first-child {
@@ -190,7 +190,7 @@
 .navbar-dark.active-dark {
   background-color: #F9F6EE;
 }
-.navbar-dark.active-dark .left .logo {
+.navbar-dark.active-dark .left .logo .logo-text {
   color: #232C33;
 }
 .navbar-dark.active-dark .right .hamburger span:first-child {

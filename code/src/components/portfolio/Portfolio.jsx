@@ -26,9 +26,11 @@ export default function Portfolio({ isDarkModeActive }) {
                   <h5>Code</h5>
                 </div>
               </a>
-              <div className="link-button">
-                <h5>Demo</h5>
-              </div>
+              <a className="button-link" href="https://peacekmo.web.app/" target="_blank" rel="noopener noreferrer">
+                <div className="link-button">
+                  <h5>Demo</h5>
+                </div>
+              </a>
             </div>
           </div>
         </div>

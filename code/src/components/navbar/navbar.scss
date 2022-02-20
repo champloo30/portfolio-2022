@@ -105,7 +105,10 @@
         .left {
             
             .logo {
-                color: $bone;
+
+                .logo-text {
+                    color: $bone;
+                }
             }
         }
     
@@ -239,7 +242,10 @@
         .left {
             
             .logo {
-                color: $gunmetal;
+                
+                .logo-text {
+                    color: $gunmetal;
+                }
             }
         }
     
