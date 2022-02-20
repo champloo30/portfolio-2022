@@ -54,7 +54,7 @@ export default function Portfolio({ isDarkModeActive }) {
                   <h5>Code</h5>
                 </div>
               </a>
-              <a className="button-link" href="https://djldev-550e6.web.app/" target="_blank" rel="noopener noreferrer">
+              <a className="button-link" href="https://djldev.tech/" target="_blank" rel="noopener noreferrer">
                 <div className="link-button">
                   <h5>Demo</h5>
                 </div>

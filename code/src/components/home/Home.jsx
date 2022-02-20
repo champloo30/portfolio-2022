@@ -17,7 +17,7 @@ export default function Home( { isDarkModeActive } ) {
 
 
   return (
-    <div className={isDarkModeActive ? "home-dark" : "home"} id="home">
+    <div id="home" className={isDarkModeActive ? "home-dark" : "home"}>
       <div className="text-box">
         <h2>Hi there, I'm</h2>
         <h1>Dalyn J. L. Dunn</h1>
