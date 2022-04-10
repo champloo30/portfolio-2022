@@ -1,6 +1,6 @@
 .about {
-  height: 100vh;
-  background-color: #107E7D;
+  height: 80vh;
+  background-color: #e6e3d5;
   display: flex;
   align-items: center;
 }
@@ -36,7 +36,6 @@
 .about .part-one .avatar {
   width: 30rem;
   height: 30rem;
-  margin-top: 2rem;
 }
 @media (max-width: 425px) {
   .about .part-one .avatar {
@@ -48,7 +47,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   font-family: freight-display-pro, serif;
-  color: #F38375;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about .part-one h2 {
@@ -94,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: -4rem;
 }
 @media (max-width: 425px) {
@@ -122,7 +121,7 @@
 .about .part-two h1 {
   font-size: 4rem;
   font-weight: 300;
-  color: #F38375;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about .part-two h1 {
@@ -130,10 +129,11 @@
   }
 }
 .about .part-two p {
+  width: 50rem;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: freight-display-pro, serif;
-  color: #F9F6EE;
+  color: #232C33;
   text-align: center;
   margin-top: -2rem;
 }
@@ -145,7 +145,7 @@
 .about .part-two h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: #F38375;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about .part-two h2 {
@@ -166,7 +166,7 @@
 }
 
 .about-dark {
-  height: 100vh;
+  height: 80vh;
   background-color: #374558;
   display: flex;
   align-items: center;
@@ -215,7 +215,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   font-family: freight-display-pro, serif;
-  color: #B79492;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about-dark .part-one h2 {
@@ -289,7 +289,7 @@
 .about-dark .part-two h1 {
   font-size: 4rem;
   font-weight: 300;
-  color: #B79492;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about-dark .part-two h1 {
@@ -297,6 +297,7 @@
   }
 }
 .about-dark .part-two p {
+  width: 50rem;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: freight-display-pro, serif;
@@ -312,7 +313,7 @@
 .about-dark .part-two h2 {
   font-size: 3rem;
   font-weight: 300;
-  color: #B79492;
+  color: #107E7D;
 }
 @media (max-width: 425px) {
   .about-dark .part-two h2 {

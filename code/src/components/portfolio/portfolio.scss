@@ -1,8 +1,212 @@
 @import "../../global.scss";
 
 .portfolio {
-    height: 110vh;
+    height: 90vh;
     background-color: $bone;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include tablet-sm {
+        height: 80vh;
+    }
+
+    @include tablet-lg {
+        height: 80vh;
+    }
+
+    @include mobile {
+        height: 140vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-family: $display;
+        font-weight: 300;
+        color: $gold;
+        margin-top: 2.5rem;
+
+        @include mobile {
+            font-size: 4rem;
+        }
+    }
+
+    .item-container {
+        height: 80vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        @include mobile {
+            height: 135vh;
+        }
+
+        @include tablet-sm {
+            width: 90%;
+        }
+
+        @include tablet-lg {
+            width: 90%;
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            @include mobile {
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-bottom: 0;
+            }
+
+            .website-box {
+                flex: 3;
+
+                .portfolio-img {
+                    height: 8rem;
+                    width: 14rem;
+                    border-radius: 10px;
+                    border: 1px solid $gunmetal;
+                    background-color: $gunmetal;
+
+                    @include tablet-lg {
+                        height: 10rem;
+                        width: 18rem;
+                    }
+                }
+            }
+
+            .text-box {
+                flex: 9;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                margin-left: 2rem;
+
+                @include mobile {
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 0;
+                }
+
+                h2 {
+                    color: $teal;
+                    font-family: $display;
+                    font-weight: 400;
+                    font-size: 2rem;
+
+                    @include mobile {
+                        font-size: 1.75rem;
+                    }
+
+                    @include tablet-lg {
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    color: $gunmetal;
+                    font-weight: 300;
+                    font-size: 1rem;
+
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+
+                    @include tablet-lg {
+                        font-size: 1rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-family: $display;
+                    font-weight: 400;
+                    color: $teal;
+                }
+
+                .stack {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h4 {
+                        font-size: 1rem;
+                        font-weight: 300;
+                        color: $gunmetal;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .button-link {
+                        text-decoration: none;
+
+                        .link-button {
+                            margin-right: 1rem;
+                            margin-top: 0.5rem;
+                            border: 2px solid $gold;
+                            color: $gold;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+    
+                            h5 {
+                                font-size: 1rem;
+                                padding: 0 1rem;
+                                font-weight: 400;
+                            }
+    
+                            &:hover {
+                                background-color: $gold;
+                                color: $bone;
+                            }
+                        }
+                    }
+
+                    .link-button {
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                        border: 2px solid $gold;
+                        color: $gold;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+
+                        h5 {
+                            font-size: 1rem;
+                            padding: 0 1rem;
+                            font-weight: 400;
+                        }
+
+                        &:hover {
+                            background-color: $gold;
+                            color: $bone;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+.portfolio-dark {
+    height: 90vh;
+    background-color: $gunmetal;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,210 +253,6 @@
         }
 
         @include tablet-lg {
-            width: 90%;
-        }
-
-        .item {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-
-            @include mobile {
-                flex-direction: column;
-                justify-content: space-evenly;
-                margin-bottom: 0;
-            }
-
-            .website-box {
-                flex: 3;
-
-                .portfolio-img {
-                    height: 8rem;
-                    width: 14rem;
-                    border-radius: 10px;
-                    border: 1px solid $teal;
-                    background-color: $gunmetal;
-
-                    @include tablet-lg {
-                        height: 10rem;
-                        width: 18rem;
-                    }
-                }
-            }
-
-            .text-box {
-                flex: 9;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-evenly;
-                margin-left: 2rem;
-
-                @include mobile {
-                    align-items: center;
-                    text-align: center;
-                    margin-left: 0;
-                }
-
-                h2 {
-                    color: $salmon;
-                    font-family: $display;
-                    font-weight: 400;
-                    font-size: 2rem;
-
-                    @include mobile {
-                        font-size: 1.75rem;
-                    }
-
-                    @include tablet-lg {
-                        font-size: 2rem;
-                    }
-                }
-
-                p {
-                    color: $purpleNavy;
-                    font-weight: 300;
-                    font-size: 1rem;
-
-                    @include mobile {
-                        font-size: 1rem;
-                    }
-
-                    @include tablet-lg {
-                        font-size: 1rem;
-                    }
-                }
-
-                h3 {
-                    font-size: 1.5rem;
-                    font-family: $display;
-                    font-weight: 400;
-                    color: $salmon;
-                }
-
-                .stack {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    h4 {
-                        font-size: 1rem;
-                        font-weight: 300;
-                        color: $gunmetal;
-                        margin-right: 1rem;
-                    }
-                }
-
-                .buttons {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .button-link {
-                        text-decoration: none;
-
-                        .link-button {
-                            margin-right: 1rem;
-                            margin-top: 0.5rem;
-                            border: 2px solid $teal;
-                            color: $teal;
-                            border-radius: 20px;
-                            cursor: pointer;
-                            transition: all 0.5s ease;
-    
-                            h5 {
-                                font-size: 1rem;
-                                padding: 0 1rem;
-                                font-weight: 400;
-                            }
-    
-                            &:hover {
-                                background-color: $teal;
-                                color: $bone;
-                            }
-                        }
-                    }
-
-                    .link-button {
-                        margin-right: 1rem;
-                        margin-top: 0.5rem;
-                        border: 2px solid $teal;
-                        color: $teal;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        transition: all 0.5s ease;
-
-                        h5 {
-                            font-size: 1rem;
-                            padding: 0 1rem;
-                            font-weight: 400;
-                        }
-
-                        &:hover {
-                            background-color: $teal;
-                            color: $bone;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    hr {
-        width: 100%;
-    }
-}
-
-.portfolio-dark {
-    height: 110vh;
-    background-color: $gunmetal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    @include tablet-sm {
-        height: 80vh;
-    }
-
-    @include tablet-lg {
-        height: 80vh;
-    }
-
-    @include mobile {
-        height: 140vh;
-    }
-
-    h1 {
-        font-size: 5rem;
-        font-family: $display;
-        font-weight: 300;
-        color: $eton;
-        margin-top: 2.5rem;
-
-        @include mobile {
-            font-size: 4rem;
-        }
-    }
-
-    .item-container {
-        height: 80vh;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-
-        @include mobile {
-            height: 135vh;
-        }
-
-        @include tablet-sm {
-            width: 90%;
-        }
-
-        @include tablet-lg {
             width: 80%;
         }
 
@@ -275,7 +275,7 @@
                     height: 8rem;
                     width: 14rem;
                     border-radius: 10px;
-                    border: 1px solid $eton;
+                    border: 1px solid $bone;
                     background-color: $charcoal;
                     cursor: pointer;
 
@@ -301,7 +301,7 @@
                 }
 
                 h2 {
-                    color: $rosy;
+                    color: $gold;
                     font-family: $display;
                     font-weight: 400;
                     font-size: 2rem;
@@ -333,7 +333,7 @@
                     font-size: 1.5rem;
                     font-family: $display;
                     font-weight: 400;
-                    color: $rosy;
+                    color: $gold;
                 }
 
                 .stack {
@@ -360,8 +360,8 @@
                         .link-button {
                             margin-right: 1rem;
                             margin-top: 0.5rem;
-                            border: 2px solid $eton;
-                            color: $eton;
+                            border: 2px solid $teal;
+                            color: $teal;
                             border-radius: 20px;
                             cursor: pointer;
                             transition: all 0.5s ease;
@@ -373,7 +373,7 @@
                             }
     
                             &:hover {
-                                background-color: $eton;
+                                background-color: $teal;
                                 color: $gunmetal;
                             }
                         }
@@ -382,8 +382,8 @@
                     .link-button {
                         margin-right: 1rem;
                         margin-top: 0.5rem;
-                        border: 2px solid $eton;
-                        color: $eton;
+                        border: 2px solid $teal;
+                        color: $teal;
                         border-radius: 20px;
                         cursor: pointer;
                         transition: all 0.5s ease;
@@ -395,7 +395,7 @@
                         }
 
                         &:hover {
-                            background-color: $eton;
+                            background-color: $teal;
                             color: $gunmetal;
                         }
                     }

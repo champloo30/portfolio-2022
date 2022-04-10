@@ -1,7 +1,7 @@
 .menu {
   width: 20rem;
   height: calc(100vh - 70px);
-  background-color: #F38375;
+  background-color: #107E7D;
   position: fixed;
   margin-top: 70px;
   right: -20rem;
@@ -75,13 +75,13 @@
   opacity: 1;
   z-index: 2;
   right: 0;
-  background-color: #F38375;
+  background-color: #107E7D;
 }
 
 .menu-dark {
   width: 20rem;
   height: calc(100vh - 70px);
-  background-color: #B79492;
+  background-color: #107E7D;
   position: fixed;
   margin-top: 70px;
   right: -20rem;
@@ -155,7 +155,7 @@
   opacity: 1;
   z-index: 2;
   right: 0;
-  background-color: #B79492;
+  background-color: #107E7D;
 }
 
 /*# sourceMappingURL=menu.css.map */

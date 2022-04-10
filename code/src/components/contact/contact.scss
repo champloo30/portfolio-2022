@@ -1,8 +1,8 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: $purpleNavy;
-    height: 90vh;
+    background-color: $gold;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@
     }
 
     h3 {
-        color: $salmon;
+        color: $teal;
         font-weight: 300;
         font-size: 1.75rem;
         font-family: $display;
@@ -63,9 +63,9 @@
                 width: 31.5rem;
                 height: 2.5rem;
                 font-size: 1.5rem;
-                background-color: $purpleNavy;
+                background-color: $gold;
                 color: $bone;
-                border: 1px solid $teal;
+                border: 1px solid $gunmetal;
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -90,9 +90,9 @@
                 width: 31.5rem;
                 height: 12.5rem;
                 font-size: 1.5rem;
-                background-color: $purpleNavy;
+                background-color: $gold;
                 color: $bone;
-                border: 1px solid $teal;
+                border: 1px solid $gunmetal;
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -117,9 +117,9 @@
             button {
                 width: 7rem;
                 height: 3rem;
-                color: $salmon;
-                background-color: $purpleNavy;
-                border: 1px solid $salmon;
+                color: $teal;
+                background-color: $gold;
+                border: 1px solid $teal;
                 border-radius: 10px;
                 font-size: 1.5rem;
                 transition: all 0.5s ease;
@@ -128,8 +128,8 @@
                 margin: auto;
 
                 &:hover {
-                    background-color: $salmon;
-                    color: $purpleNavy;
+                    background-color: $teal;
+                    color: $gold;
                 }
 
                 &:focus {
@@ -142,7 +142,7 @@
 
 .contact-dark {
     background-color: $charcoal;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +173,7 @@
     }
 
     h3 {
-        color: $eton;
+        color: $gold;
         font-weight: 300;
         font-size: 1.75rem;
         font-family: $display;
@@ -205,7 +205,7 @@
                 font-size: 1.5rem;
                 background-color: $charcoal;
                 color: $bone;
-                border: 1px solid $rosy;
+                border: 1px solid $teal;
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -232,7 +232,7 @@
                 font-size: 1.5rem;
                 background-color: $charcoal;
                 color: $bone;
-                border: 1px solid $rosy;
+                border: 1px solid $teal;
                 border-radius: 10px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -257,9 +257,9 @@
             button {
                 width: 7rem;
                 height: 3rem;
-                color: $eton;
+                color: $gold;
                 background-color: $charcoal;
-                border: 1px solid $eton;
+                border: 1px solid $gold;
                 border-radius: 10px;
                 font-size: 1.5rem;
                 transition: all 0.5s ease;
@@ -268,7 +268,7 @@
                 margin: auto;
 
                 &:hover {
-                    background-color: $eton;
+                    background-color: $gold;
                     color: $charcoal;
                 }
 

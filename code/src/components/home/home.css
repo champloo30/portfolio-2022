@@ -13,7 +13,7 @@
 }
 .home .text-box {
   height: 60vh;
-  color: #585481;
+  color: #107E7D;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -48,7 +48,7 @@
   font-size: 7rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: #F38375;
+  color: #E6BA45;
   margin-top: -1rem;
 }
 @media (max-width: 425px) {
@@ -72,7 +72,7 @@
 .home .text-box .bottom-text-home h3 span {
   font-weight: 300;
   font-family: source-code-pro, monospace;
-  color: #107E7D;
+  color: #E6BA45;
   margin-left: 1rem;
 }
 @media (max-width: 425px) {
@@ -108,7 +108,7 @@
 }
 .home-dark .text-box {
   height: 60vh;
-  color: #F9F6EE;
+  color: #107E7D;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -143,7 +143,7 @@
   font-size: 7rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: #B79492;
+  color: #E6BA45;
   margin-top: -1rem;
 }
 @media (max-width: 425px) {
@@ -167,7 +167,7 @@
 .home-dark .text-box .bottom-text-home h3 span {
   font-weight: 300;
   font-family: source-code-pro, monospace;
-  color: #A1CCA5;
+  color: #E6BA45;
   margin-left: 1rem;
 }
 @media (max-width: 425px) {

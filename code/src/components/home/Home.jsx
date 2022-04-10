@@ -11,7 +11,7 @@ export default function Home( { isDarkModeActive } ) {
           showCursor: true,
           backDelay: 2000,
           backSpeed: 60,
-          strings: ['Developer', 'Designer', '3D Artist'],
+          strings: ['Developer', 'Designer'],
       });
   }, [])
 

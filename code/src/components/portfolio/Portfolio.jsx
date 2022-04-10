@@ -1,6 +1,6 @@
 import "./portfolio.scss";
 import pkmo from "../../assets/pkmo-screenshot.png"
-import djldev from "../../assets/djldev-screenshot.jpeg"
+import djldev from "../../assets/djldev-screenshot.png"
 
 export default function Portfolio({ isDarkModeActive }) {
   return (
@@ -9,7 +9,7 @@ export default function Portfolio({ isDarkModeActive }) {
       <div className="item-container">
         <div className="item">
           <div className="website-box">
-            <img src={pkmo} alt="Peace Kingdom Ministries of Ohio Website" className="portfolio-img" />
+            <img src={pkmo} alt="peace kingdom ministries of ohio Website" className="portfolio-img" />
           </div>
           <div className="text-box">
             <h2>Peace Kingdom Ministries of Ohio</h2>
@@ -26,7 +26,7 @@ export default function Portfolio({ isDarkModeActive }) {
                   <h5>Code</h5>
                 </div>
               </a>
-              <a className="button-link" href="https://peacekmo.web.app/" target="_blank" rel="noopener noreferrer">
+              <a className="button-link" href="https://peacekmo.org/" target="_blank" rel="noopener noreferrer">
                 <div className="link-button">
                   <h5>Demo</h5>
                 </div>
@@ -37,7 +37,7 @@ export default function Portfolio({ isDarkModeActive }) {
         <hr />
         <div className="item">
         <div className="website-box">
-            <img src={djldev} alt="DJLDev Portfolio Website" className="portfolio-img" />
+            <img src={djldev} alt="d j l dev portfolio website" className="portfolio-img" />
           </div>
           <div className="text-box">
             <h2>DJLDev Portfolio Website</h2>

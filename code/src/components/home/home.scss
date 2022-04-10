@@ -14,7 +14,7 @@
 
     .text-box{
         height: 60vh;
-        color: $purpleNavy;
+        color: $teal;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -46,7 +46,7 @@
             font-size: 7rem;
             font-family: $display;
             font-weight: 400;
-            color: $salmon;
+            color: $gold;
             margin-top: -1rem;
 
             @include mobile {
@@ -69,7 +69,7 @@
                 span{
                     font-weight: 300;
                     font-family: $source;
-                    color: $teal;
+                    color: $gold;
                     margin-left: 1rem;
 
                     @include mobile {
@@ -109,7 +109,7 @@
 
     .text-box{
         height: 60vh;
-        color: $bone;
+        color: $teal;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -141,7 +141,7 @@
             font-size: 7rem;
             font-family: $display;
             font-weight: 400;
-            color: $rosy;
+            color: $gold;
             margin-top: -1rem;
 
             @include mobile {
@@ -164,7 +164,7 @@
                 span{
                     font-weight: 300;
                     font-family: $source;
-                    color: $eton;
+                    color: $gold;
                     margin-left: 1rem;
 
                     @include mobile {

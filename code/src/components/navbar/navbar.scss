@@ -22,19 +22,16 @@
                 display: flex;
                 align-items: center;
 
-                .br-bubble {
+                .logo-img {
                     height: 3rem;
                     width: 3rem;
-                    border-radius: 36% 64% 22% 78% / 47% 54% 46% 53%;
-                    background: linear-gradient(130deg, $teal 20%, $salmon);
                 }
 
                 .logo-text {
                     font-size: 40px;
                     font-weight: 500;
                     font-family: $display;
-                    color: $gunmetal;
-                    margin-left: -1rem;
+                    color: $gold;
                 }
             }
         } 
@@ -107,7 +104,7 @@
             .logo {
 
                 .logo-text {
-                    color: $bone;
+                    color: $gold;
                 }
             }
         }
@@ -156,22 +153,20 @@
         .left {
     
             .logo {
-                text-decoration: none;display: flex;
+                text-decoration: none;
+                display: flex;
                 align-items: center;
 
-                .br-bubble {
+                .logo-img {
                     height: 3rem;
                     width: 3rem;
-                    border-radius: 36% 64% 22% 78% / 47% 54% 46% 53%;
-                    background: linear-gradient(130deg, $eton, $rosy);
                 }
 
                 .logo-text {
                     font-size: 40px;
                     font-weight: 500;
                     font-family: $display;
-                    color: $bone;
-                    margin-left: -1rem;
+                    color: $gold;
                 }
             }
         } 
@@ -244,7 +239,7 @@
             .logo {
                 
                 .logo-text {
-                    color: $gunmetal;
+                    color: $gold;
                 }
             }
         }

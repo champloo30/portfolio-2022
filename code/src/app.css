@@ -4,6 +4,7 @@ html {
 html body {
   height: 100%;
   width: 100%;
+  transition: all 1s ease;
 }
 html body .skip-to-content-link {
   background: #107E7D;

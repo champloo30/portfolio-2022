@@ -3,7 +3,7 @@
 .menu {
     width: 20rem;
     height: calc(100vh - 70px);
-    background-color: $salmon;
+    background-color: $teal;
     position: fixed;
     margin-top: 70px;
     right: -20rem;
@@ -89,14 +89,14 @@
         opacity: 1;
         z-index: 2;
         right: 0;
-        background-color: $salmon;
+        background-color: $teal;
     }
 }
 
 .menu-dark {
     width: 20rem;
     height: calc(100vh - 70px);
-    background-color: $rosy;
+    background-color: $teal;
     position: fixed;
     margin-top: 70px;
     right: -20rem;
@@ -182,6 +182,6 @@
         opacity: 1;
         z-index: 2;
         right: 0;
-        background-color: $rosy;
+        background-color: $teal;
     }
 }

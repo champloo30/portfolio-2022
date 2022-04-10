@@ -1,5 +1,5 @@
 .portfolio {
-  height: 110vh;
+  height: 90vh;
   background-color: #F9F6EE;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
   font-size: 5rem;
   font-family: freight-display-pro, serif;
   font-weight: 300;
-  color: #107E7D;
+  color: #E6BA45;
   margin-top: 2.5rem;
 }
 @media (max-width: 425px) {
@@ -76,7 +76,7 @@
   height: 8rem;
   width: 14rem;
   border-radius: 10px;
-  border: 1px solid #107E7D;
+  border: 1px solid #232C33;
   background-color: #232C33;
 }
 @media (min-width: 769px) and (max-width: 1000px) {
@@ -101,7 +101,7 @@
   }
 }
 .portfolio .item-container .item .text-box h2 {
-  color: #F38375;
+  color: #107E7D;
   font-family: freight-display-pro, serif;
   font-weight: 400;
   font-size: 2rem;
@@ -117,7 +117,7 @@
   }
 }
 .portfolio .item-container .item .text-box p {
-  color: #585481;
+  color: #232C33;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -135,7 +135,7 @@
   font-size: 1.5rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: #F38375;
+  color: #107E7D;
 }
 .portfolio .item-container .item .text-box .stack {
   display: flex;
@@ -159,8 +159,8 @@
 .portfolio .item-container .item .text-box .buttons .button-link .link-button {
   margin-right: 1rem;
   margin-top: 0.5rem;
-  border: 2px solid #107E7D;
-  color: #107E7D;
+  border: 2px solid #E6BA45;
+  color: #E6BA45;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -171,14 +171,14 @@
   font-weight: 400;
 }
 .portfolio .item-container .item .text-box .buttons .button-link .link-button:hover {
-  background-color: #107E7D;
+  background-color: #E6BA45;
   color: #F9F6EE;
 }
 .portfolio .item-container .item .text-box .buttons .link-button {
   margin-right: 1rem;
   margin-top: 0.5rem;
-  border: 2px solid #107E7D;
-  color: #107E7D;
+  border: 2px solid #E6BA45;
+  color: #E6BA45;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -189,7 +189,7 @@
   font-weight: 400;
 }
 .portfolio .item-container .item .text-box .buttons .link-button:hover {
-  background-color: #107E7D;
+  background-color: #E6BA45;
   color: #F9F6EE;
 }
 .portfolio hr {
@@ -197,7 +197,7 @@
 }
 
 .portfolio-dark {
-  height: 110vh;
+  height: 90vh;
   background-color: #232C33;
   display: flex;
   flex-direction: column;
@@ -223,7 +223,7 @@
   font-size: 5rem;
   font-family: freight-display-pro, serif;
   font-weight: 300;
-  color: #A1CCA5;
+  color: #107E7D;
   margin-top: 2.5rem;
 }
 @media (max-width: 425px) {
@@ -274,7 +274,7 @@
   height: 8rem;
   width: 14rem;
   border-radius: 10px;
-  border: 1px solid #A1CCA5;
+  border: 1px solid #F9F6EE;
   background-color: #374558;
   cursor: pointer;
 }
@@ -300,7 +300,7 @@
   }
 }
 .portfolio-dark .item-container .item .text-box h2 {
-  color: #B79492;
+  color: #E6BA45;
   font-family: freight-display-pro, serif;
   font-weight: 400;
   font-size: 2rem;
@@ -334,7 +334,7 @@
   font-size: 1.5rem;
   font-family: freight-display-pro, serif;
   font-weight: 400;
-  color: #B79492;
+  color: #E6BA45;
 }
 .portfolio-dark .item-container .item .text-box .stack {
   display: flex;
@@ -358,8 +358,8 @@
 .portfolio-dark .item-container .item .text-box .buttons .button-link .link-button {
   margin-right: 1rem;
   margin-top: 0.5rem;
-  border: 2px solid #A1CCA5;
-  color: #A1CCA5;
+  border: 2px solid #107E7D;
+  color: #107E7D;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -370,14 +370,14 @@
   font-weight: 400;
 }
 .portfolio-dark .item-container .item .text-box .buttons .button-link .link-button:hover {
-  background-color: #A1CCA5;
+  background-color: #107E7D;
   color: #232C33;
 }
 .portfolio-dark .item-container .item .text-box .buttons .link-button {
   margin-right: 1rem;
   margin-top: 0.5rem;
-  border: 2px solid #A1CCA5;
-  color: #A1CCA5;
+  border: 2px solid #107E7D;
+  color: #107E7D;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -388,7 +388,7 @@
   font-weight: 400;
 }
 .portfolio-dark .item-container .item .text-box .buttons .link-button:hover {
-  background-color: #A1CCA5;
+  background-color: #107E7D;
   color: #232C33;
 }
 .portfolio-dark hr {

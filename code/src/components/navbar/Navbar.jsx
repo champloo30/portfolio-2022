@@ -1,23 +1,22 @@
 import "./navbar.scss";
+import logo from "../../assets/DJLDev.png";
 
 export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsDarkModeActive }) {
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 1 && isDarkModeActive === false) {
       document.querySelector('.navbar').style.backgroundColor = 'var(--gunmetal)';
-      document.querySelector('.logo-text').style.color = 'var(--bone)';
       document.getElementById('line1').style.backgroundColor = 'var(--bone)';
       document.getElementById('line2').style.backgroundColor = 'var(--bone)';
       document.getElementById('line3').style.backgroundColor = 'var(--bone)';
     } else if (window.scrollY >= 1 && isDarkModeActive === true) {
       document.querySelector('.navbar-dark').style.backgroundColor = 'var(--bone)';
-      document.querySelector('.logo-text').style.color = 'var(--gunmetal)';
+      document.querySelector('.logo-text').style.color = 'var(--gold)';
       document.getElementById('line1').style.backgroundColor = 'var(--gunmetal)';
       document.getElementById('line2').style.backgroundColor = 'var(--gunmetal)';
       document.getElementById('line3').style.backgroundColor = 'var(--gunmetal)';
     } else if (isDarkModeActive === true) {
       document.querySelector('.navbar-dark').style.backgroundColor = '';
-      document.querySelector('.logo-text').style.color = null;
       document.getElementById('line1').style.backgroundColor = null;
       document.getElementById('line2').style.backgroundColor = null;
       document.getElementById('line3').style.backgroundColor = null;
@@ -44,9 +43,8 @@ export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsD
     <div className={isDarkModeActive ? "navbar-dark " + (menuOpen && "active-dark") : "navbar " + (menuOpen && "active")} onScroll={changeNavbarColor} >
       <div className="container">
         <div className="left">
-          
           <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>
-          <div className="br-bubble"></div>
+          <img src={logo} alt="d j l dev logo" className="logo-img" />
             <h1 className="logo-text">DJLDev</h1>
           </a>
         </div>
