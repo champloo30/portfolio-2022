@@ -1,40 +1,76 @@
 import "./about.scss";
-import avatar from "../../assets/Avatar-Maker.png";
-import email from "../../assets/icons8-at-sign.svg";
-import github from "../../assets/icons8-github.svg";
-import linkedin from "../../assets/icons8-linkedin.svg";
-import document from "../../assets/icons8-document.svg";
-import html from "../../assets/icons8-html-5.svg";
-import css from "../../assets/icons8-css3.svg";
-import javascript from "../../assets/icons8-javascript.svg";
-import react from "../../assets/icons8-react-native.svg";
-import sass from "../../assets/icons8-sass.svg";
-import pdf from "../../assets/DJLD-Resume.pdf";
+import djld from "../../assets/DJLD.jpg";
+import check from "../../assets/check-svgrepo-com.svg";
 
-export default function About({ isDarkModeActive }) {
+export default function About() {
 
   return (
-    <div className={isDarkModeActive ? "about-dark" : "about"} id="about" >
-      <div className="part-one">
-        <img src={avatar} alt="Avatar of Me" className="avatar" />
-        <h2>Dalyn J. L. Dunn</h2>
-        <div className="po-icons">
-          <a href="mailto:djld30@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt="Email Icon" className="icon" /></a>
-          <a href="http://github.com/champloo30" target="_blank" rel="noopener noreferrer"><img src={github} alt="Github Icon" className="icon" /></a>
-          <a href="http://www.linkedin.com/in/dalyn-dunn-a70176216/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn Icon" className="icon" /></a>
-          <a href={pdf} target="_blank" rel="noreferrer"><img src={document} alt="Document Icon" className="icon" /></a>
+    <div id="about" className="about">
+      <div className="about-container">
+        <div className="a-title">
+          <h3>Get To Know</h3>
+          <div className="a-title-box">
+            <div className="h-line"></div>
+            <h2>me</h2>
+            <div className="h-line"></div>
+          </div>
         </div>
-      </div>
-      <div className="part-two">
-        <h1>"Hello World"</h1>
-        <p>Hello and welcome! My name is Dalyn and I'm a self-taught Front-End Web Developer and UX/UI Designer. I'm currently working full-time as a Web Content Developer at Abercrombie & Fitch Co. and part-time as a freelance developer and designer for websites and business brandings.</p>
-        <h2>Skills</h2>
-        <div className="pt-icons">
-          <img src={html} alt="HTML Icon" className="icon" />
-          <img src={css} alt="CSS Icon" className="icon" />
-          <img src={javascript} alt="JavaScript Icon" className="icon" />
-          <img src={react} alt="React Icon" className="icon" />
-          <img src={sass} alt="Sass Icon" className="icon" />
+        <div className="a-content">
+          <div className="left">
+            <div className="img-container">
+              <img src={djld} alt="Dalyn J. L. Dunn" className="djld" />
+            </div>
+          </div>
+          <div className="right">
+            <p>Hello and welcome! My name is Dalyn J. L. Dunn and I'm a self-taught Front-End Web Developer and UX/UI Designer. I'm currently working full-time as a Web Content Developer at Abercrombie & Fitch Co. and part-time as a freelance developer and designer for websites and business brandings.</p>
+            <div className="skills">
+              <h2>Skills</h2>
+              <div className="skills-container">
+                <div className="skills-row">
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">html</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">css</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">sass</span>
+                  </div>
+                </div>
+                <div className="skills-row">
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">bootstrap</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">javascript</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">jquery</span>
+                  </div>
+                </div>
+                <div className="skills-row">
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">react</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">ux/ui</span>
+                  </div>
+                  <div className="skill">
+                    <img src={check} alt="" className="skill-img" />
+                    <span className="skill-name">adobe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

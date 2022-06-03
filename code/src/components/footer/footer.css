@@ -1,39 +1,3 @@
-.footer {
-  height: 70px;
-  width: 100%;
-  background-color: transparent;
-  margin-top: -70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer a {
-  text-decoration: none;
-}
-.footer a h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-family: freight-display-pro, serif;
-  color: #F9F6EE;
-}
 
-.footer-dark {
-  height: 70px;
-  width: 100%;
-  background-color: transparent;
-  margin-top: -70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-dark a {
-  text-decoration: none;
-}
-.footer-dark a h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-family: freight-display-pro, serif;
-  color: #F9F6EE;
-}
 
 /*# sourceMappingURL=footer.css.map */

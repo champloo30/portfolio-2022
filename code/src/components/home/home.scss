@@ -2,193 +2,161 @@
 
 .home {
     height: 100vh;
-    background-color: $bone;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 
-    @include mobile {
-        height: 100vh;
-    }
-
-    .text-box{
-        height: 60vh;
-        color: $teal;
+    .home-container {
+        width: 80%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: 2rem;
-        
-        @include mobile {
-            height: 40vh;
-            margin-left: 0.5rem;
-        }
+        align-items: center;
+        justify-content: center;
 
-        @include tablet-sm {
-            height: 40vh;
-        }
-
-        @include tablet-lg {
-            height: 40vh;
-        }
-
-        h2{
-            font-size: 4rem;
-            font-weight: 300;
-
-            @include mobile {
-                font-size: 2.5rem;
-            }
-        }
-    
-        h1{
-            font-size: 7rem;
-            font-family: $display;
-            font-weight: 400;
-            color: $gold;
-            margin-top: -1rem;
-
-            @include mobile {
-                font-size: 3.5rem;
-            }
-        }
-    
-        .bottom-text-home{
+        .left {
+            height: 15rem;
+            flex: 2;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -4.5rem;
+            display: none;
+
+            .v-line-left {
+                width: 3px;
+                height: 50px;
+                background-color: $cool;
+            }
+
+            .m-icons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .l-a {
+                    margin: 2px 0;
+                
+                    .i-home {
+                        width: 2rem;
+
+                        &:hover {
+                            width: 2.5rem;
+                            transition: all 0.5s ease;
+                        }
+                    }
     
-            h3{
-                font-size: 3rem;
-                font-weight: 300;
-                font-family: $display;
+                    .i-email {
+                        width: 1.5rem;
 
-                @include mobile {
-                    font-size: 2rem;
-                }
-
-                span{
-                    font-weight: 300;
-                    font-family: $source;
-                    color: $gold;
-                    margin-left: 1rem;
-
-                    @include mobile {
-                        margin-left: 0.5rem;
+                        &:hover {
+                            width: 2rem;
+                            transition: all 0.5s ease;
+                        }
                     }
                 }
             }
-
-            .ityped-cursor{
-                margin-left: -0.5rem;
-                animation: blink 1s infinite;
-            }
-    
-            @keyframes blink {
-                50%{
-                    opacity: 1;
-                }
-                100%{
-                    opacity: 0;
-                }
-            }
-        }
-    }
-}
-
-.home-dark {
-    height: 100vh;
-    background-color: $gunmetal;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
-    @include mobile {
-        height: 100vh;
-    }
-
-    .text-box{
-        height: 60vh;
-        color: $teal;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: 2rem;
-
-        @include mobile {
-            height: 40vh;
-            margin-left: 0.5rem;
         }
 
-        @include tablet-sm {
-            height: 40vh;
-        }
-
-        @include tablet-lg {
-            height: 40vh;
-        }
-
-        h2{
-            font-size: 4rem;
-            font-weight: 300;
-
-            @include mobile {
-                font-size: 2.5rem;
-            }
-        }
-    
-        h1{
-            font-size: 7rem;
-            font-family: $display;
-            font-weight: 400;
-            color: $gold;
-            margin-top: -1rem;
-
-            @include mobile {
-                font-size: 3.5rem;
-            }
-        }
-    
-        .bottom-text-home{
+        .center {
+            height: 30rem;
+            flex: 8;
             display: flex;
-    
-            h3{
-                font-size: 3rem;
-                font-weight: 300;
-                font-family: $display;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
 
-                @include mobile {
-                    font-size: 2rem;
+            h2 {
+                color: $gold;
+                font-size: 1.5rem;
+                font-weight: 500;
+                opacity: 0;
+            }
+
+            .logo-container {
+                height: 15rem;
+                width: 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $cool;
+                border-radius: 200px;
+                opacity: 0;
+
+                .logo {
+                    width: 27.5rem;
+                    height: 10rem;
+                    position: absolute;
                 }
+            }
 
-                span{
-                    font-weight: 300;
-                    font-family: $source;
-                    color: $gold;
-                    margin-left: 1rem;
+            .home-cta {
+                text-decoration: none;
 
-                    @include mobile {
-                        margin-left: 0.5rem;
+                .c-a {
+                    text-decoration: none;
+                    opacity: 0;
+
+                    .resume-btn {
+                        height: 3.5rem;
+                        width: 7rem;
+                        margin: 0 1rem;
+                        border: 3px solid $cool;
+                        border-radius: 12.5px;
+                        background-color: $teal;
+                        color: $cool;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+    
+                        &:hover {
+                            background-color: $cool;
+                            color: $teal;
+                            transition: all 0.5s ease;
+                        }
+                    }
+
+                    .lc-btn {
+                        height: 3.5rem;
+                        width: 7rem;
+                        margin: 0 1rem;
+                        border-radius: 12.5px;
+                        background-color: $cool;
+                        border: none;
+                        color: $teal;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+    
+                        &:hover {
+                            height: 4rem;
+                            width: 7.5rem;
+                            transition: all 0.5s ease;
+                        }
                     }
                 }
             }
+        }
 
-            .ityped-cursor{
-                margin-left: -1rem;
-                animation: blink 1s infinite;
+        .right {
+            height: 15rem;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -4.5rem;
+            display: none;
 
-                @include mobile {
-                    margin-left: -0.5rem;
-                }
+            .v-line-right {
+                width: 3px;
+                height: 50px;
+                background-color: $cool;
             }
-    
-            @keyframes blink {
-                50%{
-                    opacity: 1;
-                }
-                100%{
-                    opacity: 0;
-                }
+
+            span {
+                font-size: 1.25rem;
+                transform: rotate(90deg);
+                margin-left: 5px;
+                color: $cool;
             }
         }
     }

@@ -1,68 +1,36 @@
 import "./navbar.scss";
-import logo from "../../assets/DJLDev.png";
+import home from "../../assets/home-svgrepo-com.svg";
+import person from "../../assets/icons8-person.svg";
+import briefcase from "../../assets/icons8-briefcase.svg";
+import iphone from "../../assets/icons8-iphone-x.svg";
 
-export default function Navbar({ menuOpen, setMenuOpen, isDarkModeActive, setIsDarkModeActive }) {
-
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 1 && isDarkModeActive === false) {
-      document.querySelector('.navbar').style.backgroundColor = 'var(--gunmetal)';
-      document.getElementById('line1').style.backgroundColor = 'var(--bone)';
-      document.getElementById('line2').style.backgroundColor = 'var(--bone)';
-      document.getElementById('line3').style.backgroundColor = 'var(--bone)';
-    } else if (window.scrollY >= 1 && isDarkModeActive === true) {
-      document.querySelector('.navbar-dark').style.backgroundColor = 'var(--bone)';
-      document.querySelector('.logo-text').style.color = 'var(--gold)';
-      document.getElementById('line1').style.backgroundColor = 'var(--gunmetal)';
-      document.getElementById('line2').style.backgroundColor = 'var(--gunmetal)';
-      document.getElementById('line3').style.backgroundColor = 'var(--gunmetal)';
-    } else if (isDarkModeActive === true) {
-      document.querySelector('.navbar-dark').style.backgroundColor = '';
-      document.getElementById('line1').style.backgroundColor = null;
-      document.getElementById('line2').style.backgroundColor = null;
-      document.getElementById('line3').style.backgroundColor = null;
-    } else if (isDarkModeActive === false) {
-      document.querySelector('.navbar').style.backgroundColor = null;
-      document.querySelector('.logo-text').style.color = null;
-      document.getElementById('line1').style.backgroundColor = null;
-      document.getElementById('line2').style.backgroundColor = null;
-      document.getElementById('line3').style.backgroundColor = null;
-    }
-    return
-  };
-  window.addEventListener('scroll', changeNavbarColor)
-
-  const switchModes = (mode) => {
-    if (mode === "light") {
-      setIsDarkModeActive(false)
-    } else if (mode === "dark") {
-      setIsDarkModeActive(true)
-    }
-  }
+export default function Navbar() {
 
   return (
-    <div className={isDarkModeActive ? "navbar-dark " + (menuOpen && "active-dark") : "navbar " + (menuOpen && "active")} onScroll={changeNavbarColor} >
-      <div className="container">
-        <div className="left">
-          <a href="#home" className="logo" onClick={()=>setMenuOpen(false)}>
-          <img src={logo} alt="d j l dev logo" className="logo-img" />
-            <h1 className="logo-text">DJLDev</h1>
+    <div className="navbar">
+      <div className="nav-container">
+        <ul className="nav-items">
+          <a href="#home">
+            <li className="nav-links active">
+              <img src={home} alt="link to home page" className="home-i" />
+            </li>
           </a>
-        </div>
-        <div className="right">
-          <div className={isDarkModeActive ? "toggle-dark": "toggle-light"}>
-            <h4 className="light-mode" onClick={() => switchModes("light")}>
-              Light
-            </h4>
-            <h4 className="dark-mode" onClick={() => switchModes("dark")}>
-              Dark
-            </h4>
-          </div>
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)} tabIndex="0" role="menu">
-            <span id="line1"></span>
-            <span id="line2"></span>
-            <span id="line3"></span>
-          </div>
-        </div>
+          <a href="#about">
+            <li className="nav-links">
+              <img src={person} alt="link to about page" className="person-i" />
+            </li>
+          </a>
+          <a href="#portfolio">
+            <li className="nav-links">
+              <img src={briefcase} alt="link to portfolio page" className="brief-i" />
+            </li>
+          </a>
+          <a href="#contact">
+            <li className="nav-links">
+              <img src={iphone} alt="link to contact page" className="phone-i" />
+            </li>
+          </a>
+        </ul>
       </div>
     </div>
   );

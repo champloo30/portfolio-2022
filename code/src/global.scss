@@ -1,26 +1,17 @@
-//light
-$bone: #F9F6EE;
-$gold: #E6BA45;
-$egg: #e6e3d5;
-$teal: #107E7D;
-$purpleNavy: #585481;
-$gunmetal: #232C33;
+//colors
 
-//dark
-$gunmetal: #232C33;
-$charcoal: #374558;
-$eton: #A1CCA5;
-$rosy: #B79492;
-$bone: #F9F6EE;
+$egg: #e6e3d5;
+$gold: #E6BA45;
+$cool: #4EA8A8;
+$teal: #107E7D;
 
 //fonts
-$source: source-code-pro, monospace;
 $display: freight-display-pro, serif;
 
 //media queries
 $mobile-width: 425px;
 $tablet-sm-width: 768px;
-$tablet-lg-width: 1000px;
+$tablet-lg-width: 1024px;
 
 @mixin mobile {
     @media (max-width: #{$mobile-width}) {

@@ -1,7 +1,7 @@
 import "./contact.scss";
 import { useState } from "react";
 
-export default function Contact({ isDarkModeActive }) {
+export default function Contact() {
 
     const [data, setData] = useState({
         name: "",
@@ -50,18 +50,6 @@ export default function Contact({ isDarkModeActive }) {
     }
 
     return (
-        <div className={isDarkModeActive ? "contact-dark" : "contact"} id="contact">
-            <h1>Contact</h1>
-            <h3>(Let's chat over a coffee and a bagel!)</h3>
-            <div className="form">
-                <form className="input-form" onSubmit={handleSubmit}>
-                    <input type="text" name="name" placeholder="Name" onChange={handleChange} required/>
-                    <input type="text" name="company" placeholder="Company Name (optional)" onChange={handleChange}/>
-                    <input type="text" name="email" placeholder="Email" onChange={handleChange} required/>
-                    <textarea name="message" placeholder="Message" onChange={handleChange} required></textarea>
-                    <button onClick={thankYou} type="submit">Send</button>
-                </form>
-            </div>
-        </div>
+        <div className="contact"></div>
   );
 }

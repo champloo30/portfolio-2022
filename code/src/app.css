@@ -1,5 +1,5 @@
 html {
-  background-color: #F9F6EE;
+  background-color: #107E7D;
 }
 html body {
   height: 100%;
@@ -8,7 +8,7 @@ html body {
 }
 html body .skip-to-content-link {
   background: #107E7D;
-  color: #F9F6EE;
+  color: #e6e3d5;
   height: 30px;
   left: 50%;
   padding: 8px;
