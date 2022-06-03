@@ -3,7 +3,7 @@ import Contact from "./components/contact/Contact.jsx"
 import Home from "./components/home/Home.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
-import Work from "./components/portfolio/Portfolio.jsx";
+import Portfolio from "./components/portfolio/Portfolio.jsx";
 import "./app.scss";
 import "./global.scss";
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Portfolio />
     </>
   );
 }
