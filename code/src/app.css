@@ -4,7 +4,13 @@ html {
 html body {
   height: 100%;
   width: 100%;
-  transition: all 1s ease;
+  overflow-y: hidden;
+}
+html body .sections {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 html body .skip-to-content-link {
   background: #107E7D;

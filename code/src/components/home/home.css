@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  scroll-snap-align: start;
 }
 .home .home-container {
   width: 80%;
@@ -75,7 +76,6 @@
 .home .home-container .center .logo-container .logo {
   width: 27.5rem;
   height: 10rem;
-  position: absolute;
 }
 .home .home-container .center .home-cta {
   text-decoration: none;
@@ -106,14 +106,14 @@
   margin: 0 1rem;
   border-radius: 12.5px;
   background-color: #4EA8A8;
-  border: none;
+  border: 3px solid #4EA8A8;
   color: #107E7D;
   font-size: 1.5rem;
   cursor: pointer;
 }
 .home .home-container .center .home-cta .c-a .lc-btn:hover {
-  height: 4rem;
-  width: 7.5rem;
+  background-color: #107E7D;
+  color: #4EA8A8;
   transition: all 0.5s ease;
 }
 .home .home-container .right {

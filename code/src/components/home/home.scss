@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-snap-align: start;
 
     .home-container {
         width: 80%;
@@ -86,7 +87,6 @@
                 .logo {
                     width: 27.5rem;
                     height: 10rem;
-                    position: absolute;
                 }
             }
 
@@ -121,14 +121,14 @@
                         margin: 0 1rem;
                         border-radius: 12.5px;
                         background-color: $cool;
-                        border: none;
+                        border: 3px solid $cool;
                         color: $teal;
                         font-size: 1.5rem;
                         cursor: pointer;
     
                         &:hover {
-                            height: 4rem;
-                            width: 7.5rem;
+                            background-color: $teal;
+                            color: $cool;
                             transition: all 0.5s ease;
                         }
                     }

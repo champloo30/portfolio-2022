@@ -16,19 +16,27 @@ export default function Portfolio() {
         </div>
         <div className="boxes-container">
           <div className="box">
-            <img src="" alt="" className="p-img" />
+            <img src={pkmo} alt="p k m o website" className="p-img" />
             <h3>Peace Kingdom Ministries of Ohio</h3>
             <div className="p-btn-container">
-              <button className="p-btn">Github</button>
-              <button className="p-btn">Live</button>
+              <a href="https://github.com/champloo30/pkmoSite" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-g">Github</button>
+              </a>
+              <a href="http://peacekmo.org" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-l">Live</button>
+              </a>
             </div>
           </div>
           <div className="box">
-            <img src="" alt="" className="p-img" />
+            <img src={djldev} alt="d j l dev website" className="p-img" />
             <h3>DJLDev</h3>
             <div className="p-btn-container">
-              <button className="p-btn">Github</button>
-              <button className="p-btn">Live</button>
+              <a href="https://github.com/champloo30/portfolio-2022" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-g">Github</button>
+              </a>
+              <a href="http://djldev.tech" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-l">Live</button>
+              </a>
             </div>
           </div>
         </div>

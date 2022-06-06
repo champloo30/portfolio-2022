@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: start;
 
     .portfolio-container {
         height: 100vh;  
@@ -14,7 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         
         .p-title {
             height: 6rem;
@@ -23,7 +24,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            margin-top: -7rem;
+            margin-top: -8rem;
     
             h3 {
                 color: $cool;
@@ -46,6 +47,86 @@
                     font-size: 2rem;
                     text-transform: uppercase;
                     margin: 0 1rem;
+                }
+            }
+        }
+        
+        .boxes-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .box {
+                height: 20rem;
+                width: 18.75rem;
+                background-color: $cool;
+                border-radius: 30px;
+                border: 1px solid $gold;
+                margin: 0 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .p-img {
+                    height: 7.5rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+
+                h3 {
+                    width: 80%;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: $egg;
+                    font-weight: 300;
+                }
+
+                .p-btn-container {
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .p-a {
+                        margin: 0 1rem;
+
+                        .p-btn-g {
+                            width: 6.25rem;
+                            height: 3rem;
+                            font-size: 1.5rem;
+                            background-color: $cool;
+                            border: 2px solid $teal;
+                            border-radius: 10px;
+                            color: $teal;
+                            transition: all 0.5s ease;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: $teal;
+                                color: $cool;
+                            }
+                        }
+
+                        .p-btn-l {
+                            width: 6.25rem;
+                            height: 3rem;
+                            font-size: 1.5rem;
+                            background-color: $teal;
+                            border: 2px solid $teal;
+                            border-radius: 10px;
+                            color: $cool;
+                            transition: all 0.5s ease;
+                            cursor: pointer;
+
+
+
+                            &:hover {
+                                background-color: $cool;
+                                color: $teal;
+                            }
+                        }
+                    }
                 }
             }
         }

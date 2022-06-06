@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
 }
 .portfolio .portfolio-container {
   height: 100vh;
@@ -12,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .portfolio .portfolio-container .p-title {
   height: 6rem;
@@ -21,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: -7rem;
+  margin-top: -8rem;
 }
 .portfolio .portfolio-container .p-title h3 {
   color: #4EA8A8;
@@ -42,6 +43,74 @@
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0 1rem;
+}
+.portfolio .portfolio-container .boxes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .portfolio-container .boxes-container .box {
+  height: 20rem;
+  width: 18.75rem;
+  background-color: #4EA8A8;
+  border-radius: 30px;
+  border: 1px solid #E6BA45;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portfolio .portfolio-container .boxes-container .box .p-img {
+  height: 7.5rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.portfolio .portfolio-container .boxes-container .box h3 {
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #e6e3d5;
+  font-weight: 300;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container .p-a {
+  margin: 0 1rem;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container .p-a .p-btn-g {
+  width: 6.25rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #4EA8A8;
+  border: 2px solid #107E7D;
+  border-radius: 10px;
+  color: #107E7D;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container .p-a .p-btn-g:hover {
+  background-color: #107E7D;
+  color: #4EA8A8;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container .p-a .p-btn-l {
+  width: 6.25rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #107E7D;
+  border: 2px solid #107E7D;
+  border-radius: 10px;
+  color: #4EA8A8;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.portfolio .portfolio-container .boxes-container .box .p-btn-container .p-a .p-btn-l:hover {
+  background-color: #4EA8A8;
+  color: #107E7D;
 }
 
 /*# sourceMappingURL=portfolio.css.map */

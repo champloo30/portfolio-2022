@@ -50,6 +50,38 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact"></div>
+        <div id="contact" className="contact">
+            <div className="contact-container">
+                <div className="c-title">
+                    <h3>Get In Touch</h3>
+                    <div className="c-title-box">
+                        <div className="h-line"></div>
+                        <h2>let's chat</h2>
+                        <div className="h-line"></div>
+                    </div>
+                </div>
+                <div className="contact-form-container">
+                    <form className="form" onSubmit={handleSubmit}>
+                        <div className="row">
+                            <label htmlFor="name">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Full Name" value={name} onChange={handleChange} required />
+                        </div>
+                        <div className="row">
+                            <label htmlFor="company">Company</label>
+                            <input type="text" name="company" id="company" placeholder="Company Name" value={company} onChange={handleChange} />
+                        </div>
+                        <div className="row">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="Email" value={email} onChange={handleChange} required />
+                        </div>
+                        <div className="row">
+                            <label htmlFor="message">Message</label>
+                            <textarea name="message" id="message"  value={message} onChange={handleChange} placeholder="What can I do for you?" cols="30" rows="10" required ></textarea>
+                        </div>
+                        <input className="sub-btn" type="submit" value="Send Message" onClick={thankYou} />
+                    </form>
+                </div>
+            </div>
+        </div>
   );
 }

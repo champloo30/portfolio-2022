@@ -11,9 +11,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
+      <div className="sections">
+        <Home />
+        <About />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }
