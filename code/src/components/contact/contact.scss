@@ -4,7 +4,6 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
@@ -83,6 +82,11 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
+                        @include mobile {
+                            height: 2rem;
+                            width: 7rem;
+                        }
                     }
 
                     input {
@@ -95,6 +99,11 @@
                         font-size: 1.5rem;
                         padding-left: 0.75rem;
                         font-weight: 300;
+
+                        @include mobile {
+                            height: 2rem;
+                            width: 15rem;
+                        }
 
                         &::placeholder {
                             color: $egg;
@@ -113,6 +122,10 @@
                         padding-left: 0.75rem;
                         padding-top: 0.5rem;
                         font-weight: 300;
+
+                        @include mobile {
+                            width: 15rem;
+                        }
 
                         &::placeholder {
                             color: $egg;
@@ -138,6 +151,28 @@
                     }
                 }
             }
+        }
+    }
+
+    .to-footer {
+        width: 3rem;
+        position: relative;
+        top: 20rem;
+        left: 2.5rem;
+    }
+        
+    .active {
+        animation-name: aniDown;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: 2;
+    
+
+        @keyframes aniDown {
+
+            from {top: 20rem;}
+
+            to {top: 22rem;}
         }
     }
 }

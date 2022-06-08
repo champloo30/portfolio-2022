@@ -6,7 +6,7 @@ import tiktok from "../../assets/icons8-tiktok.svg";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div id="footer" className="footer">
       <div className="footer-container">
         <div className="f-title-box">
           <div className="h-line"></div>

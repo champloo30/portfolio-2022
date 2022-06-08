@@ -24,6 +24,11 @@
   justify-content: space-evenly;
   margin-top: -8rem;
 }
+@media (max-width: 425px) {
+  .portfolio .portfolio-container .p-title {
+    margin-top: 1rem;
+  }
+}
 .portfolio .portfolio-container .p-title h3 {
   color: #4EA8A8;
   font-size: 1.125rem;
@@ -48,6 +53,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 425px) {
+  .portfolio .portfolio-container .boxes-container {
+    flex-direction: column;
+  }
 }
 .portfolio .portfolio-container .boxes-container .box {
   height: 20rem;

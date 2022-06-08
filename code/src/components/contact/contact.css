@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
@@ -77,6 +76,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  .contact .contact-container .contact-form-container .form .row label {
+    height: 2rem;
+    width: 7rem;
+  }
+}
 .contact .contact-container .contact-form-container .form .row input {
   width: 30rem;
   height: 2.5rem;
@@ -87,6 +92,12 @@
   font-size: 1.5rem;
   padding-left: 0.75rem;
   font-weight: 300;
+}
+@media (max-width: 425px) {
+  .contact .contact-container .contact-form-container .form .row input {
+    height: 2rem;
+    width: 15rem;
+  }
 }
 .contact .contact-container .contact-form-container .form .row input::placeholder {
   color: #e6e3d5;
@@ -103,6 +114,11 @@
   padding-left: 0.75rem;
   padding-top: 0.5rem;
   font-weight: 300;
+}
+@media (max-width: 425px) {
+  .contact .contact-container .contact-form-container .form .row textarea {
+    width: 15rem;
+  }
 }
 .contact .contact-container .contact-form-container .form .row textarea::placeholder {
   color: #e6e3d5;
@@ -122,6 +138,26 @@
 .contact .contact-container .contact-form-container .form .sub-btn:hover {
   background-color: #E6BA45;
   color: #107E7D;
+}
+.contact .to-footer {
+  width: 3rem;
+  position: relative;
+  top: 20rem;
+  left: 2.5rem;
+}
+.contact .active {
+  animation-name: aniDown;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 2;
+}
+@keyframes aniDown {
+  from {
+    top: 20rem;
+  }
+  to {
+    top: 22rem;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

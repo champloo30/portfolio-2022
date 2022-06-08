@@ -4,12 +4,24 @@
   display: flex;
   justify-content: center;
   scroll-snap-align: start;
+  overflow-y: hidden;
+}
+@media (max-width: 425px) {
+  .home {
+    height: 110vh;
+  }
 }
 .home .home-container {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 425px) {
+  .home .home-container {
+    width: 90%;
+    margin-left: 1.5rem;
+  }
 }
 .home .home-container .left {
   height: 15rem;
@@ -20,6 +32,11 @@
   justify-content: space-between;
   margin-top: -4.5rem;
   display: none;
+}
+@media (max-width: 425px) {
+  .home .home-container .left {
+    margin-top: 10rem;
+  }
 }
 .home .home-container .left .v-line-left {
   width: 3px;
@@ -57,11 +74,21 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 425px) {
+  .home .home-container .center {
+    margin-top: -15rem;
+  }
+}
 .home .home-container .center h2 {
   color: #E6BA45;
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 0;
+}
+@media (max-width: 425px) {
+  .home .home-container .center h2 {
+    text-align: center;
+  }
 }
 .home .home-container .center .logo-container {
   height: 15rem;
@@ -73,16 +100,41 @@
   border-radius: 200px;
   opacity: 0;
 }
+@media (max-width: 425px) {
+  .home .home-container .center .logo-container {
+    height: 8rem;
+    width: 18.5rem;
+  }
+}
 .home .home-container .center .logo-container .logo {
   width: 27.5rem;
   height: 10rem;
 }
+@media (max-width: 425px) {
+  .home .home-container .center .logo-container .logo {
+    width: 15rem;
+    height: 6rem;
+  }
+}
 .home .home-container .center .home-cta {
   text-decoration: none;
+}
+@media (max-width: 425px) {
+  .home .home-container .center .home-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .home .home-container .center .home-cta .c-a {
   text-decoration: none;
   opacity: 0;
+}
+@media (max-width: 425px) {
+  .home .home-container .center .home-cta .c-a {
+    margin: 0.5rem 0;
+  }
 }
 .home .home-container .center .home-cta .c-a .resume-btn {
   height: 3.5rem;
@@ -125,6 +177,12 @@
   justify-content: space-between;
   margin-top: -4.5rem;
   display: none;
+}
+@media (max-width: 425px) {
+  .home .home-container .right {
+    margin-top: 10rem;
+    margin-right: -0.5rem;
+  }
 }
 .home .home-container .right .v-line-right {
   width: 3px;

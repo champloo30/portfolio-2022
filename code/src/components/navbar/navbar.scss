@@ -8,6 +8,10 @@
     margin-top: 87.5vh;
     position: fixed;
 
+    @include mobile {
+        margin-top: 93.75vh;
+    }
+
     .nav-container {
         width: 320px;
         background-color: rgba($color: black, $alpha: 0.25);
@@ -22,7 +26,7 @@
             list-style: none;
             padding: 0;
 
-            .nav-links {
+            .nav-link {
                 margin: 0 0.75rem;
                 height: 3rem;
                 width: 3rem;
@@ -30,6 +34,13 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $cool;
+                    border-radius: 100px;
+                    opacity: 0.5;
+                }
 
                 .home-i {
                     width: 32px;
@@ -46,10 +57,14 @@
                 .phone-i {
                     width: 34px;
                 }
+            }
 
-                &.active {
-                    background-color: $cool;
-                    border-radius: 100px;
+            .active {
+                background-color: $cool;
+                border-radius: 100px;
+
+                &:hover {
+                    opacity: 1;
                 }
             }
         }

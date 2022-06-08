@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className="right">
           <div className="v-line-right"></div>
-          <span>Scroll Down</span>
+          <span>Toggle Menu</span>
           <div className="v-line-right"></div>
         </div>
       </div>

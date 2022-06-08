@@ -6,6 +6,11 @@
   margin-top: 87.5vh;
   position: fixed;
 }
+@media (max-width: 425px) {
+  .navbar {
+    margin-top: 93.75vh;
+  }
+}
 .navbar .nav-container {
   width: 320px;
   background-color: rgba(0, 0, 0, 0.25);
@@ -20,7 +25,7 @@
   list-style: none;
   padding: 0;
 }
-.navbar .nav-container .nav-items .nav-links {
+.navbar .nav-container .nav-items .nav-link {
   margin: 0 0.75rem;
   height: 3rem;
   width: 3rem;
@@ -28,22 +33,31 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
-.navbar .nav-container .nav-items .nav-links .home-i {
-  width: 32px;
-}
-.navbar .nav-container .nav-items .nav-links .person-i {
-  width: 48px;
-}
-.navbar .nav-container .nav-items .nav-links .brief-i {
-  width: 44px;
-}
-.navbar .nav-container .nav-items .nav-links .phone-i {
-  width: 34px;
-}
-.navbar .nav-container .nav-items .nav-links.active {
+.navbar .nav-container .nav-items .nav-link:hover {
   background-color: #4EA8A8;
   border-radius: 100px;
+  opacity: 0.5;
+}
+.navbar .nav-container .nav-items .nav-link .home-i {
+  width: 32px;
+}
+.navbar .nav-container .nav-items .nav-link .person-i {
+  width: 48px;
+}
+.navbar .nav-container .nav-items .nav-link .brief-i {
+  width: 44px;
+}
+.navbar .nav-container .nav-items .nav-link .phone-i {
+  width: 34px;
+}
+.navbar .nav-container .nav-items .active {
+  background-color: #4EA8A8;
+  border-radius: 100px;
+}
+.navbar .nav-container .nav-items .active:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -1,4 +1,5 @@
 import "./contact.scss";
+import down from "../../assets/down-arrow-svgrepo-com.svg";
 import { useState } from "react";
 
 export default function Contact() {
@@ -82,6 +83,9 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
+            <a href="#footer">
+                <img id="to-footer" src={down} alt="link to footer" className="to-footer" />
+            </a>
         </div>
   );
 }
