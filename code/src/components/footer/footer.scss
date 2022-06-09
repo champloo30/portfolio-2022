@@ -14,12 +14,16 @@
     }
 
     .footer-container {
-        height: 30rem;  
+        height: 20rem;  
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         margin-top: -5rem;
+
+        @include mobile {
+            height: 30rem;
+        }
 
         .f-title-box {
             display: flex;
@@ -54,7 +58,7 @@
                 margin: 0 0.5rem;
 
                 @include mobile {
-                    margin: 0.5rem 0;
+                    margin: 0.5rem;
                 }
 
                 h3 {
