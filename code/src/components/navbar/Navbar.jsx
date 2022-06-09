@@ -6,19 +6,6 @@ import iphone from "../../assets/icons8-iphone-x.svg";
 
 export default function Navbar() {
 
-  let resetBtn = () => {
-    document.querySelectorAll(".nav-link").forEach((li) => {
-      li.classList.remove("active");
-    });
-  };
-
-  document.querySelectorAll(".nav-link").forEach((li) => {
-    li.addEventListener("click", () => {
-      resetBtn();
-      li.classList.add("active");
-    });
-  });
-
   return (
     <div className="navbar">
       <div className="nav-container">

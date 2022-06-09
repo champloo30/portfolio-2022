@@ -38,7 +38,6 @@
 .navbar .nav-container .nav-items .nav-link:hover {
   background-color: #4EA8A8;
   border-radius: 100px;
-  opacity: 0.5;
 }
 .navbar .nav-container .nav-items .nav-link .home-i {
   width: 32px;
@@ -51,13 +50,6 @@
 }
 .navbar .nav-container .nav-items .nav-link .phone-i {
   width: 34px;
-}
-.navbar .nav-container .nav-items .active {
-  background-color: #4EA8A8;
-  border-radius: 100px;
-}
-.navbar .nav-container .nav-items .active:hover {
-  opacity: 1;
 }
 
 /*# sourceMappingURL=navbar.css.map */

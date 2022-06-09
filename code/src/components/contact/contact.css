@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 3.75rem;
 }
 @media (max-width: 425px) {
   .contact .contact-container {

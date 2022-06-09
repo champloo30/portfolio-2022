@@ -39,7 +39,6 @@
                 &:hover {
                     background-color: $cool;
                     border-radius: 100px;
-                    opacity: 0.5;
                 }
 
                 .home-i {
@@ -56,15 +55,6 @@
 
                 .phone-i {
                     width: 34px;
-                }
-            }
-
-            .active {
-                background-color: $cool;
-                border-radius: 100px;
-
-                &:hover {
-                    opacity: 1;
                 }
             }
         }
