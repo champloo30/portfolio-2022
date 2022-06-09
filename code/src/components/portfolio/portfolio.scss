@@ -9,6 +9,10 @@
     justify-content: center;
     scroll-snap-align: start;
 
+    @include mobile {
+        height: 110vh;
+    }
+
     .portfolio-container {
         height: 100vh;  
         width: 80%;  
@@ -62,6 +66,8 @@
 
             @include mobile {
                 flex-direction: column;
+                margin-top: 3rem;
+
             }
 
             .box {
@@ -75,6 +81,10 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
+
+                @include mobile {
+                    margin: 1rem 0;
+                }
 
                 .p-img {
                     height: 7.5rem;

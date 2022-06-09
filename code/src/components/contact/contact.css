@@ -14,6 +14,11 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 425px) {
+  .contact .contact-container {
+    margin-left: 3rem;
+  }
+}
 .contact .contact-container .c-title {
   height: 6rem;
   width: 19rem;
@@ -22,6 +27,11 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: -2.5rem;
+}
+@media (max-width: 425px) {
+  .contact .contact-container .c-title {
+    margin-top: -3rem;
+  }
 }
 .contact .contact-container .c-title h3 {
   color: #4EA8A8;
@@ -96,7 +106,7 @@
 @media (max-width: 425px) {
   .contact .contact-container .contact-form-container .form .row input {
     height: 2rem;
-    width: 15rem;
+    width: 14rem;
   }
 }
 .contact .contact-container .contact-form-container .form .row input::placeholder {
@@ -117,7 +127,7 @@
 }
 @media (max-width: 425px) {
   .contact .contact-container .contact-form-container .form .row textarea {
-    width: 15rem;
+    width: 14rem;
   }
 }
 .contact .contact-container .contact-form-container .form .row textarea::placeholder {
@@ -145,18 +155,10 @@
   top: 20rem;
   left: 2.5rem;
 }
-.contact .active {
-  animation-name: aniDown;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-iteration-count: 2;
-}
-@keyframes aniDown {
-  from {
-    top: 20rem;
-  }
-  to {
-    top: 22rem;
+@media (max-width: 425px) {
+  .contact .to-footer {
+    top: 17rem;
+    left: -2rem;
   }
 }
 

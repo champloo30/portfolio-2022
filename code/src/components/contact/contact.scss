@@ -15,6 +15,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        @include mobile {
+            margin-left: 3rem;
+        }
           
         .c-title {
             height: 6rem;
@@ -24,6 +28,10 @@
             align-items: center;
             justify-content: space-evenly;
             margin-top: -2.5rem;
+
+            @include mobile {
+                margin-top: -3rem;
+            }
       
             h3 {
                 color: $cool;
@@ -102,7 +110,7 @@
 
                         @include mobile {
                             height: 2rem;
-                            width: 15rem;
+                            width: 14rem;
                         }
 
                         &::placeholder {
@@ -124,7 +132,7 @@
                         font-weight: 300;
 
                         @include mobile {
-                            width: 15rem;
+                            width: 14rem;
                         }
 
                         &::placeholder {
@@ -159,20 +167,10 @@
         position: relative;
         top: 20rem;
         left: 2.5rem;
-    }
-        
-    .active {
-        animation-name: aniDown;
-        animation-duration: 1s;
-        animation-timing-function: ease;
-        animation-iteration-count: 2;
-    
 
-        @keyframes aniDown {
-
-            from {top: 20rem;}
-
-            to {top: 22rem;}
+        @include mobile {
+            top: 17rem;
+            left: -2rem;
         }
     }
 }
