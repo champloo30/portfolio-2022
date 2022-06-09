@@ -57,6 +57,15 @@
                     width: 34px;
                 }
             }
+
+            .active {
+                background-color: $cool;
+                border-radius: 100px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
