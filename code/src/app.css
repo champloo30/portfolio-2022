@@ -8,6 +8,7 @@ html body {
 }
 html body .sections {
   height: 100vh;
+  min-height: 800px;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;

@@ -65,6 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -1rem;
 }
 @media (max-width: 425px) {
   .about .about-container .a-content {

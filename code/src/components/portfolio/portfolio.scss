@@ -28,7 +28,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            margin-top: -8rem;
+            margin-top: -9rem;
 
             @include mobile {
                 margin-top: 1rem;
@@ -76,7 +76,7 @@
                 background-color: $cool;
                 border-radius: 30px;
                 border: 1px solid $gold;
-                margin: 0 3rem;
+                margin: -3rem 3rem 0;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

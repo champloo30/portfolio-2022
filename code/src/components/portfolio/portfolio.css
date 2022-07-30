@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: -8rem;
+  margin-top: -9rem;
 }
 @media (max-width: 425px) {
   .portfolio .portfolio-container .p-title {
@@ -71,7 +71,7 @@
   background-color: #4EA8A8;
   border-radius: 30px;
   border: 1px solid #E6BA45;
-  margin: 0 3rem;
+  margin: -3rem 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

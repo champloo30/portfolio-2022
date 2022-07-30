@@ -1,6 +1,7 @@
 import "./portfolio.scss";
 import pkmo from "../../assets/pkmo-screenshot.png"
 import djldev from "../../assets/djldev-screenshot.png"
+import pinnacle from "../../assets/pinnacle-screenshot.png"
 
 export default function Portfolio() {
   return (
@@ -35,6 +36,18 @@ export default function Portfolio() {
                 <button className="p-btn-g">Github</button>
               </a>
               <a href="http://djldev.tech" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-l">Live</button>
+              </a>
+            </div>
+          </div>
+          <div className="box">
+            <img src={pinnacle} alt="pinnacle fitness demo website" className="p-img" />
+            <h3>Pinnacle Fitness*</h3>
+            <div className="p-btn-container">
+              <a href="https://github.com/champloo30/pinnacle-fitness" target="_blank" rel="noopener noreferrer" className="p-a">
+                <button className="p-btn-g">Github</button>
+              </a>
+              <a href="https://pinnacle-fitness-demo.web.app/" target="_blank" rel="noopener noreferrer" className="p-a">
                 <button className="p-btn-l">Live</button>
               </a>
             </div>
